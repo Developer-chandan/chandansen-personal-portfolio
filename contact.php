@@ -1,4 +1,4 @@
-<?php
+ <?php
 $visitors_name = $_POST['name'];
 $visitors_email =$_POST['email'];
 $visitors_phone =$_POST['phone'];
@@ -19,4 +19,4 @@ $email_body = "User Name: $visitors_name.\n".
       mail($to,$email_subject,$email_body,$headers);
       header("Location: contact.php")         
 
- ?>
+ ?> 

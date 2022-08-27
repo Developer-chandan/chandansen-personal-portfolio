@@ -1,1 +1,311 @@
-@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap);*{margin:0;padding:0}html{font-size:10px;scroll-behavior:smooth}body{font-size:1.6rem;font-family:Roboto,sans-serif;box-sizing:border-box}ul{list-style:none;padding-left:0!important}a{text-decoration:none}.py-5{padding-top:70px!important;padding-bottom:70px!important}.my-5{margin-top:70px!important;margin-bottom:70px!important}.pt-5{padding-top:70px!important}.pb-5{padding-bottom:70px!important}.mt-5{margin-top:70px!important}.mb-5{margin-bottom:70px!important}.header{background:linear-gradient(#000000d6,#000000e0),url(../img/team.jpg);height:600px;background-size:cover;background-position:center;background-repeat:no-repeat;border-bottom:3px solid #ff5200}.checktbn{font-size:30px;color:#ff5200;float:right!important;line-height:80px;margin-right:40px;cursor:pointer;display:none}ul{float:right!important;margin-top:22px;float:left;text-transform:uppercase;font-size:1.5rem;transition:all .3s;font-weight:700;text-decoration:none}li:last-child{margin-right:0}li:hover a{color:#ff5200}.protfolio-btn:hover{background:#ff5200;color:#fff;border:2px solid #ff5200}.hire-btn{float:left;border:2px solid #ff5200}.hire-btn:hover{background:#0000;color:#fff;border:2px solid #fff}a{text-transform:uppercase;color:#fff;background:#ff5200;padding:8px 20px;text-decoration:none;border-radius:2px;transition:all .3s}.about-image-pad{padding-left:0!important}.about-border{border:4px solid #f89595a3;box-shadow:0 0 30px #ff5200ad}.about-descp-boxes{margin-top:50px;padding:15px 0;font-size:2.8rem;font-weight:600;color:#ff5200}.more` 4'1-btn{background:#ff5200;margin-right:60px;padding:12px 32px}.more-btn:hover{background:#000;color:#fff}.contact-btn{background:#000;margin-left:60px;border:2px solid #000}.contact-btn:hover{background:#fff;color:#ff5200;border:2px solid #ff5200}#service .service-boxes:after{content:"";position:absolute;border:4px solid #ff5200;width:100px;height:100px;left:50%;top:-60px;transform:translateX(-50px)}.title{text-align:center;width:400px;margin:0 auto;padding-bottom:80px;font-size:5rem;text-transform:capitalize}.progress-boxes{padding:5px 0;font-size:1.8rem!important}.progress{background:#ddd;height:14px;border-radius:20px;font-size:1.4rem;font-weight:700}.achive-boxes{background:#000;padding:10px 0;text-align:center;margin-right:25px}strong{font-size:4rem;margin-left:25px}h2{text-transform:uppercase;color:#fff!important}a{color:#ff5200;font-weight:700}.send-message-btn{margin-top:30px;padding:10px 30px;text-decoration:none;color:#fff;border:2px solid #ff5200;border-radius:3px;transition:all .3s}a:hover{background:#000;border:2px solid #ff5200}.showcase-social-icon{padding-left:10px!important}.showcase-btn{margin-top:100px!important}.showcase-image{width:350px!important;float:right}.service-boxes:after{width:89px;height:89px}.about-buttons{padding-top:20px}.showcase-image{width:290px!important}.showcase-btn{margin-top:60px!important}.about-buttons{padding-top:0;margin-right:39px;padding:8px 15px}.contact-btn{font-size:1.4rem;margin-right:39px;padding:6px 13px}.checktbn{display:block!important}.navManu{transform:scaleX(0);transform-origin:left}.nav-wrapper{padding-left:0!important}.navManuAss{opacity:1!important;position:fixed;height:300px;background:#000;text-align:center;width:100%;transform:scaleX(1);z-index:999;top:80px;transition:all .2s;margin-top:30px!important;float:none!important;display:block!important;font-size:1.5rem!important;transition:all .3s;font-weight:700!important;text-align:center!important}li:last-child{margin-right:0}li:hover a{color:#ff5200!important};
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap);
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: Roboto, sans-serif;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0 !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+.py-5 {
+    padding-top: 70px !important;
+    padding-bottom: 70px !important;
+}
+
+.my-5 {
+    margin-top: 70px !important;
+    margin-bottom: 70px !important;
+}
+
+.pt-5 {
+    padding-top: 70px !important;
+}
+
+.pb-5 {
+    padding-bottom: 70px !important;
+}
+
+.mt-5 {
+    margin-top: 70px !important;
+}
+
+.mb-5 {
+    margin-bottom: 70px !important;
+}
+
+.header {
+    background: linear-gradient(#000000d6, #000000e0), url(../img/team.jpg);
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: 3px solid #ff5200
+}
+
+.checktbn {
+    font-size: 30px;
+    color: #ff5200;
+    float: right !important;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none
+}
+
+ul {
+    float: right !important;
+    margin-top: 22px;
+    float: left;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    transition: all .3s;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+li:last-child {
+    margin-right: 0;
+}
+
+li:hover a {
+    color: #ff5200;
+}
+
+.protfolio-btn:hover {
+    background: #ff5200;
+    color: #fff;
+    border: 2px solid #ff5200;
+}
+
+.hire-btn {
+    float: left;
+    border: 2px solid #ff5200;
+}
+
+.hire-btn:hover {
+    background: #0000;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+a {
+    text-transform: uppercase;
+    color: #fff;
+    background: #ff5200;
+    padding: 8px 20px;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: all .3s;
+}
+
+.about-image-pad {
+    padding-left: 0 !important;
+}
+
+.about-border {
+    border: 4px solid #f89595a3;
+    box-shadow: 0 0 30px #ff5200ad;
+}
+
+.about-descp-boxes {
+    margin-top: 50px;
+    padding: 15px 0;
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #ff5200;
+}
+
+.more1-btn {
+    background: #ff5200;
+    margin-right: 60px;
+    padding: 12px 32px;
+}
+
+.more-btn:hover {
+    background: #000;
+    color: #fff;
+}
+
+.contact-btn {
+    background: #000;
+    margin-left: 60px;
+    border: 2px solid #000;
+}
+
+.contact-btn:hover {
+    background: #fff;
+    color: #ff5200;
+    border: 2px solid #ff5200;
+}
+
+#service .service-boxes:after {
+    content: "";
+    position: absolute;
+    border: 4px solid #ff5200;
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    top: -60px;
+    transform: translateX(-50px);
+}
+
+.title {
+    text-align: center;
+    width: 400px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+    font-size: 5rem;
+    text-transform: capitalize;
+}
+
+.progress-boxes {
+    padding: 5px 0;
+    font-size: 1.8rem !important;
+}
+
+.progress {
+    background: #ddd;
+    height: 14px;
+    border-radius: 20px;
+    font-size: 1.4rem;
+    font-weight: 700
+}
+
+.achive-boxes {
+    background: #000;
+    padding: 10px 0;
+    text-align: center;
+    margin-right: 25px;
+}
+
+strong {
+    font-size: 4rem;
+    margin-left: 25px;
+}
+
+h2 {
+    text-transform: uppercase;
+    color: #fff !important;
+}
+
+a {
+    color: #ff5200;
+    font-weight: 700;
+}
+
+.send-message-btn {
+    margin-top: 30px;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #ff5200;
+    border-radius: 3px;
+    transition: all .3s;
+}
+
+a:hover {
+    background: #000;
+    border: 2px solid #ff5200;
+}
+
+.showcase-social-icon {
+    padding-left: 10px !important;
+}
+
+.showcase-btn {
+    margin-top: 100px !important;
+}
+
+.showcase-image {
+    width: 350px !important;
+    float: right
+}
+
+.service-boxes:after {
+    width: 89px;
+    height: 89px;
+}
+
+.about-buttons {
+    padding-top: 20px;
+}
+
+.showcase-image {
+    width: 290px !important;
+}
+
+.showcase-btn {
+    margin-top: 60px !important;
+}
+
+.about-buttons {
+    padding-top: 0;
+    margin-right: 39px;
+    padding: 8px 15px;
+}
+
+.contact-btn {
+    font-size: 1.4rem;
+    margin-right: 39px;
+    padding: 6px 13px;
+}
+
+.checktbn {
+    display: block !important;
+}
+
+.navManu {
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+.nav-wrapper {
+    padding-left: 0 !important;
+}
+
+.navManuAss {
+    opacity: 1 !important;
+    position: fixed;
+    height: 300px;
+    background: #000;
+    text-align: center;
+    width: 100%;
+    transform: scaleX(1);
+    z-index: 999;
+    top: 80px;
+    transition: all .2s;
+    margin-top: 30px !important;
+    float: none !important;
+    display: block !important;
+    font-size: 1.5rem !important;
+    transition: all .3s;
+    font-weight: 700 !important;
+    text-align: center !important;
+}
+
+li:last-child {
+    margin-right: 0;
+}
+
+li:hover a {
+    color: #ff5200 !important;
+}
+

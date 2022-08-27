@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100; 300; 400; 500; 700; 900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
 * {
     margin: 0;
     padding: 0
@@ -7,33 +7,39 @@
 
 html {
     font-size: 10px;
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
 }
 
 :root {
     --chandan-bg: #ff5200;
     --white: #fff;
-    --black: #000
+    --black: #000;
+    --gray:#ddd;
+    --gradient-text:linear-gradient(to right, #d0ce30 0%, #671708 100%);
 }
 
 body {
     font-size: 1.6rem;
     font-family: Roboto, sans-serif;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 body p {
-    letter-spacing: .3px
+    letter-spacing: .3px;
 }
 
 ul {
     list-style: none;
-    padding-left: 0 !important
+    padding-left: 0 !important;
+}
+li{
+    list-style: none;
 }
 
 a {
-    text-decoration: none
+    text-decoration: none;
 }
+
 
 .button-black,
 .button-simple {
@@ -44,60 +50,60 @@ a {
     color: #fff;
     transition: all .3s;
     border: 2px solid var(--chandan-bg);
-    background: var(--chandan-bg)
+    background: var(--chandan-bg);
 }
 
 .button-black a,
 .button-simple a {
     text-decoration: none;
-    color: var(--white)
+    color: var(--white);
 }
 
 .button-black {
     background: var(--black);
     color: var(--white);
-    border: 2px solid var(--black)
+    border: 2px solid var(--black);
 }
 
 .button-simple:hover {
     background: var(--black);
     color: var(--white);
-    border: 2px solid var(--white)
+    border: 2px solid var(--white);
 }
 
 .button-black:hover {
     background: var(--white);
-    border: 2px solid var(--chandan-bg)
+    border: 2px solid var(--chandan-bg);
 }
 
 .button-black:hover a {
-    color: var(--chandan-bg)
+    color: var(--chandan-bg);
 }
 
 .py-5 {
     padding-top: 70px !important;
-    padding-bottom: 70px !important
+    padding-bottom: 70px !important;
 }
 
 .my-5 {
     margin-top: 70px !important;
-    margin-bottom: 70px !important
+    margin-bottom: 70px !important;
 }
 
 .pt-5 {
-    padding-top: 70px !important
+    padding-top: 70px !important;
 }
 
 .pb-5 {
-    padding-bottom: 70px !important
+    padding-bottom: 70px !important;
 }
 
 .mt-5 {
-    margin-top: 70px !important
+    margin-top: 70px !important;
 }
 
 .mb-5 {
-    margin-bottom: 70px !important
+    margin-bottom: 70px !important;
 }
 
 .header {
@@ -106,7 +112,7 @@ a {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    position: relative
+    position: relative;
 }
 
 header#header::before {
@@ -117,33 +123,33 @@ header#header::before {
     background: #111015;
     bottom: -10rem;
     transform-origin: left;
-    transform: skewY(-3deg)
+    transform: skewY(-3deg);
 }
 
 .header .uk-active {
     background: #fff !important;
-    box-shadow: 1px -1px 20px 0 var(--chandan-bg)
+    box-shadow: 1px 0px 10px 0 var(--chandan-bg);
 }
 
 .header .uk-active a {
-    color: #000
+    color: #000;
 }
 
 .header nav {
-    z-index: 999 !important
+    z-index: 999 !important;
 }
 
 .logo-part.col-md-6 {
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 .header nav .logo-part img {
-    width: 13rem
+    width: 13rem;
 }
 
 .header nav #check {
-    display: none
+    display: none;
 }
 
 .header nav .checktbn {
@@ -151,7 +157,7 @@ header#header::before {
     color: var(--chandan-bg);
     line-height: 45px;
     cursor: pointer;
-    display: none
+    display: none;
 }
 
 .header nav ul {
@@ -159,16 +165,16 @@ header#header::before {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 0;
-    padding-top: 1rem
+    padding-top: 1rem;
 }
 
 .header nav ul li {
     margin-right: 6rem;
-    margin-top: 0
+    margin-top: 0;
 }
 
 .header nav .responsive-row {
-    padding: 12px 0
+    padding: 12px 0;
 }
 
 .header nav ul li a {
@@ -177,30 +183,30 @@ header#header::before {
     font-size: 1.5rem;
     transition: all .3s;
     font-weight: 700;
-    text-decoration: none
+    text-decoration: none;
 }
 
 .header nav ul li:first-child a {
-    color: var(--chandan-bg)
+    color: var(--chandan-bg);
 }
 
 .header nav ul li:hover a {
-    color: var(--chandan-bg)
+    color: var(--chandan-bg);
 }
 
 .header #showcase {
-    margin-top: 10rem
+    margin-top: 10rem;
 }
 
 .header #showcase .showcase-title h1 {
     color: #fff;
     text-transform: capitalize;
     font-size: 5rem;
-    margin-bottom: 2rem
+    margin-bottom: 2rem;
 }
 
 .header #showcase .showcase-title h1 strong {
-    color: var(--chandan-bg)
+    color: var(--chandan-bg);
 }
 
 .header #showcase .showcase-social-icon {
@@ -209,7 +215,7 @@ header#header::before {
 }
 
 .header #showcase .showcase-social-icon li {
-    margin: 0 1.2rem
+    margin: 0 1.2rem;
 }
 
 .header #showcase .showcase-social-icon li a {
@@ -222,14 +228,14 @@ header#header::before {
     color: #fff;
     border-radius: 100%;
     transition: all .3s;
-    text-decoration: none
+    text-decoration: none;
 }
 
 .header #showcase .showcase-social-icon li:hover a {
     background: var(--chandan-bg);
     color: #fff;
     border: 1px solid var(--chandan-bg);
-    transform: rotate(360deg)
+    transform: rotate(360deg);
 }
 
 .header #showcase .showcase-image {
@@ -239,50 +245,50 @@ header#header::before {
 }
 
 .header #showcase .showcase-image img {
-    border: 4px solid var(--chandan-bg)
+    border: 4px solid var(--chandan-bg);
 }
 
 .header #showcase .showcase-btn {
-    margin-top: 7rem
+    margin-top: 7rem;
 }
 
 .header #showcase .showcase-btn ul .protfolio-btn {
     background: #0000;
-    border: 2px solid #fff
+    border: 2px solid #fff;
 }
 
 .header #showcase .showcase-btn ul .protfolio-btn:hover {
     background: var(--chandan-bg);
     color: #fff;
-    border: 2px solid var(--chandan-bg)
+    border: 2px solid var(--chandan-bg);
 }
 
 .header #showcase .showcase-btn ul .hire-btn {
-    border: 2px solid var(--chandan-bg)
+    border: 2px solid var(--chandan-bg);
 }
 
 .header #showcase .showcase-btn>ul {
     margin-top: 7rem;
     display: flex;
     flex-direction: row;
-    justify-content: space-around
+    justify-content: space-around;
 }
 
 .header #showcase .showcase-btn ul .hire-btn:hover {
     background: #0000;
     color: #fff;
-    border: 2px solid #fff
+    border: 2px solid #fff;
 }
 
 .header .showcase-title p {
     font-size: 3rem;
     color: #fff;
     letter-spacing: 1px;
-    font-weight: 600
+    font-weight: 600;
 }
 
 .header .showcase-title p span {
-    color: var(--chandan-bg)
+    color: var(--chandan-bg);
 }
 
 .header #showcase .showcase-btn ul a {
@@ -292,59 +298,126 @@ header#header::before {
     padding: 8px 20px;
     text-decoration: none;
     border-radius: 2px;
-    transition: all .3s
+    transition: all .3s;
 }
 
 #about {
-    padding-top: 13rem
+    padding-top: 13rem;
 }
 
 #about .container-lg {
-    padding-left: 0 !important
+    padding-left: 0 !important;
 }
 
 #about .about-image-pad {
-    padding-left: 0 !important
+    padding-left: 0 !important;
 }
 
 #about .about-border {
-    border: 4px solid #f89595a3;
-    box-shadow: 0 0 30px #ff5200ad
+   
+    box-shadow:0 0 20px 0px #beafac8a;
 }
 
 #about .about-descp-boxes {
     margin-top: 3rem;
-    padding: 1.5rem 0
+    padding: 1.5rem 0;
 }
 
 #about .about-descp-boxes h1 {
     text-transform: capitalize;
     font-size: 2.8rem;
     font-weight: 600;
-    color: var(--chandan-bg)
+    color: var(--chandan-bg);
 }
 
 #about .about-buttons {
-    padding-top: 4rem
+    padding-top: 4rem;
 }
 
 #about .about-buttons .more-btn {
-    margin-right: 6rem
+    margin-right: 6rem;
 }
 
 #about .about-buttons .more-btn:hover {
     background: #000;
-    color: #fff
+    color: #fff;
 }
 
 #about .about-buttons .contact-btn {
-    margin-left: 6rem
+    margin-left: 6rem;
 }
 
 #about .about-descp-boxes p {
     font-size: 1.7rem;
-    color: #000000bf
+    color: #000000bf;
 }
+
+/* portfolio websites design  */
+#portfolio{
+    padding: 2rem 0 4rem 0;
+}
+.portfolio-projects-tabs{
+    width: 800px;
+    margin: 0 auto;
+    padding: 4rem 0;
+}
+.portfolio-projects-tabs .tabs{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.portfolio-projects-tabs .tabs .tab.is-active a[data-switcher]{
+    background:var(--black);
+    color: var(--white);
+    
+}
+
+.portfolio-projects-tabs .tabs .tab a[data-switcher]{
+    color: var(--chandan-bg);
+    font-size: 2rem;
+    padding: 1rem 3rem;
+    border: 1px solid var(--gray);
+
+    
+}
+
+.portfolio-projects-tabs .tabs .tab a[data-switcher]:hover{
+    background: var(--black);
+    color:var(--white);
+    text-decoration: none;
+
+}
+.pages{
+    width: 100%;
+}
+.pages .page{
+    display: none;
+}
+.gallery {
+    margin: 2.5rem 0;
+}
+
+.portfolio-box {
+    display: block;
+  
+}
+.portfolio-box:hover > div > img{
+    transform: scale(1.1);
+    transition: all .6s;
+}
+.portfolio-box > div > img{
+    width: 100%;
+}
+
+.pages .page.is-active{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 2.5rem;
+}
+
+
+/* My services */
 
 #service {
     background: linear-gradient(#000000d6, #000000e0), url(../img/office.jpg);
@@ -353,7 +426,7 @@ header#header::before {
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: #fff;
-    margin-top: 15rem !important
+    margin-top: 15rem !important;
 }
 
 #service .service-boxes {
@@ -362,12 +435,12 @@ header#header::before {
     margin: 15px 0;
     color: #000000ba;
     position: relative;
-    height: 25rem
+    height: 25rem;
 }
 
 #service .service-boxes .icon-box {
     margin: 0 auto;
-    width: 100px
+    width: 100px;
 }
 
 #service .service-boxes .icon-box i {
@@ -380,21 +453,21 @@ header#header::before {
     color: #fff;
     position: absolute;
     top: -60px;
-    transition: all .3s
+    transition: all .3s;
 }
 
 #service .service-boxes .service-descp {
-    padding-top: 7rem
+    padding-top: 7rem;
 }
 
 #service .service-boxes .service-descp h1 {
     text-transform: uppercase;
     font-size: 2rem;
-    font-weight: 600
+    font-weight: 600;
 }
 
 .service-boxes:hover .icon-box i {
-    transform: scale(.8) !important
+    transform: scale(.8) !important;
 }
 
 #service .service-boxes:after {
@@ -405,27 +478,33 @@ header#header::before {
     height: 100px;
     left: 50%;
     top: -60px;
-    transform: translateX(-50px)
+    transform: translateX(-50px);
 }
 
 .title {
     text-align: center;
     width: 40rem;
-    margin: 0 auto
+    margin: 0 auto;
 }
 
 #service .title {
-    padding-bottom: 15rem
+    padding-bottom: 15rem;
 }
 
 .title h1 {
     color: var(--chandan-bg);
     font-size: 5rem;
-    text-transform: capitalize
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
 }
+/* .title h1.g-color{
+    color: var(--gradient-text);
+    -webkit-background-clip: text;
+    
+} */
 
 section#all-skills {
-    padding-bottom: 4rem
+    padding-bottom: 4rem;
 }
 
 .all-slikls-boxes h1 {
@@ -433,7 +512,7 @@ section#all-skills {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 2rem;
-    letter-spacing: 2px
+    letter-spacing: 2px;
 }
 
 .basic-web-dev-skills,
@@ -443,7 +522,7 @@ section#all-skills {
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
-    padding: 1rem 0
+    padding: 1rem 0;
 }
 
 .skills-images-boxes {
@@ -453,7 +532,7 @@ section#all-skills {
     border: 11px solid #d5d5d5;
     border-radius: 50%;
     justify-content: space-around;
-    align-items: center
+    align-items: center;
 }
 
 .all-slikls-boxes h1 {
@@ -462,31 +541,31 @@ section#all-skills {
     font-weight: 900;
     font-size: 1.7rem;
     letter-spacing: 2px;
-    padding-top: 1rem
+    padding-top: 1rem;
 }
 
 .skills-images-boxes img {
-    border-radius: 50px
+    border-radius: 50px;
 }
 
 .all-skills-boxeswrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center
+    justify-content: center;
 }
 
 .basic-web-dev-skills {
     padding-left: 11rem;
-    padding-right: 11rem
+    padding-right: 11rem;
 }
 
 .more-web-relate-knowladge {
     padding-left: 20rem;
-    padding-right: 20rem
+    padding-right: 20rem;
 }
 
 #all-skills .title {
-    padding-bottom: 5rem
+    padding-bottom: 5rem;
 }
 
 .all-slikls-boxes {
@@ -494,7 +573,7 @@ section#all-skills {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 1rem
+    margin: 1rem;
 }
 
 #achievement {
@@ -503,48 +582,48 @@ section#all-skills {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: #fff
+    color: #fff;
 }
 
 #achievement .title {
-    padding-bottom: 4rem
+    padding-bottom: 4rem;
 }
 
 #achievement .achive-boxes {
     background: #000;
     padding: 1rem 0;
-    text-align: center
+    text-align: center;
 }
 
 #achievement .achive-boxes i {
     font-size: 4rem;
-    margin-right: 2.5rem
+    margin-right: 2.5rem;
 }
 
 #achievement .achive-boxes strong {
     font-size: 4rem;
-    margin-left: 2.5rem
+    margin-left: 2.5rem;
 }
 
 #achievement .achive-boxes h2 {
     text-transform: uppercase;
-    color: #fff !important
+    color: #fff !important;
 }
 
 section#invite .title {
-    padding-bottom: 10rem
+    padding-bottom: 10rem;
 }
 
 #invite .invite-boxes {
     background: #dddddd61;
     height: 18rem;
     padding: 0 20px;
-    position: relative
+    position: relative;
 }
 
 #invite .invite-boxes .invite-icon {
     width: 7.5rem;
-    margin: 0 auto
+    margin: 0 auto;
 }
 
 #invite .invite-boxes .invite-icon i {
@@ -558,25 +637,25 @@ section#invite .title {
     display: grid;
     place-items: center;
     border-radius: 100%;
-    top: -40px
+    top: -40px;
 }
 
 #invite .invite-boxes .invite-descp {
-    padding-top: 70px
+    padding-top: 70px;
 }
 
 #invite .invite-boxes .invite-descp a,
 #invite .invite-boxes .invite-descp p {
-    text-transform: capitalize
+    text-transform: capitalize;
 }
 
 #invite .invite-boxes .invite-descp a {
     color: var(--chandan-bg);
-    font-weight: 700
+    font-weight: 700;
 }
 
 #invite .emailbox .invite-descp p {
-    text-transform: none
+    text-transform: none;
 }
 
 #contact .contact-side input,
@@ -587,11 +666,11 @@ section#invite .title {
     width: 100%;
     padding: 12px 5px;
     margin-bottom: 3.5rem;
-    font-size: 1.5rem
+    font-size: 1.5rem;
 }
 
 #contact .contact-side .send-message-btn {
-    margin-top: 3rem
+    margin-top: 3rem;
 }
 
 #contact .contact-side .send-message-btn input {
@@ -601,47 +680,47 @@ section#invite .title {
     color: #fff;
     border: 2px solid var(--chandan-bg);
     border-radius: 3px;
-    transition: all .3s
+    transition: all .3s;
 }
 
 #contact .contact-side .send-message-btn input:hover {
     background: #000;
-    border: 2px solid var(--chandan-bg)
+    border: 2px solid var(--chandan-bg);
 }
 
 #contact .mapside p iframe {
     width: 100%;
-    height: 40rem
+    height: 40rem;
 }
 
 input:focus {
     outline: 0 !important;
     border-color: var(--chandan-bg);
-    box-shadow: 0 0 5px var(--chandan-bg)
+    box-shadow: 0 0 5px var(--chandan-bg);
 }
 
 textarea:focus {
     outline: 0 !important;
     border-color: var(--chandan-bg);
-    box-shadow: 0 0 5px var(--chandan-bg)
+    box-shadow: 0 0 5px var(--chandan-bg);
 }
 
 footer {
     background: #000;
     text-align: center;
-    margin-top: 5rem
+    margin-top: 5rem;
 }
 
 footer .footer-descp p {
     color: #fff;
     padding: 20px 0;
     margin-bottom: 0;
-    text-transform: capitalize
+    text-transform: capitalize;
 }
 
 @media (max-width:1200px) {
     header {
-        height: 500px
+        height: 500px;
     }
 
     header nav ul li a {
@@ -650,71 +729,80 @@ footer .footer-descp p {
         font-size: 1.3rem !important;
         transition: all .3s;
         font-weight: 700 !important;
-        text-decoration: none
+        text-decoration: none;
     }
 
     .header nav ul li {
-        margin-right: 5rem
+        margin-right: 5rem;
     }
 
     #showcase .showcase-title h1 {
-        font-size: 4rem
+        font-size: 4rem;
     }
 
     #showcase .showcase-social-icon {
-        padding-left: 10px
+        padding-left: 10px;
     }
 
     #showcase .showcase-social-icon li:first-child {
-        margin-left: 0
+        margin-left: 0;
     }
 
     #showcase .showcase-btn {
-        margin-top: 10rem
+        margin-top: 10rem;
     }
 
     #showcase .showcase-image {
         width: 35rem;
-        float: right
+        float: right;
     }
 
     #service .service-boxes .icon-box i {
         width: 89px;
-        height: 89px
+        height: 89px;
     }
 
     #service .service-boxes::after {
         width: 89px;
-        height: 89px
+        height: 89px;
     }
 
+
+
+
+
+
+
+
+
+
     #about .about-descp-boxes {
-        margin-top: 0
+        margin-top: 0;
     }
 
     #about .about-descp-boxes h1 {
-        font-size: 2.5rem
+        font-size: 2.5rem;
     }
 
     #about .about-descp-boxes .about-buttons {
-        padding-top: 2rem
+        padding-top: 2rem;
     }
 
     .progress-bar {
         text-align: end;
-        padding-right: 2rem
+        padding-right: 2rem;
     }
 
     #contact .mapside p iframe {
         width: 100%;
-        height: 40rem
+        height: 40rem;
     }
 }
 
 @media (max-width:992px) {
     nav li {
         margin-right: 2rem !important;
-        margin-top: 2.2rem
+        margin-top: 2.2rem;
     }
 
     nav li a {
@@ -723,37 +811,37 @@ footer .footer-descp p {
         font-size: 1.4rem !important;
         transition: all .3s;
         font-weight: 400 !important;
-        text-decoration: none
+        text-decoration: none;
     }
 
     nav li:last-child {
-        margin-right: 0
+        margin-right: 0;
     }
 
     #service .service-boxes .icon-box i {
-        top: -45px !important
+        top: -45px !important;
     }
 
     #service .service-boxes:after {
-        top: -45px !important
+        top: -45px !important;
     }
 
     header nav ul li {
-        margin-right: 4.5rem
+        margin-right: 4.5rem;
     }
 }
 
 @media (max-width:870px) {
     header {
-        height: 500px
+        height: 500px;
     }
 
     .header .logo-part img {
-        width: 100px
+        width: 100px;
     }
 
     .header nav ul li {
-        margin-right: 2rem
+        margin-right: 2rem;
     }
 
     header nav ul li a {
@@ -762,15 +850,15 @@ footer .footer-descp p {
         font-size: 1.3rem;
         transition: all .3s;
         font-weight: 400;
-        text-decoration: none
+        text-decoration: none;
     }
 
     #showcase {
-        margin-top: 5rem
+        margin-top: 5rem;
     }
 
     #showcase .showcase-title h1 {
-        font-size: 3.5rem
+        font-size: 3.5rem;
     }
 
     #showcase .showcase-image {
@@ -778,84 +866,84 @@ footer .footer-descp p {
         width: 26.6rem;
         position: relative;
         top: 34%;
-        right: 8%
+        right: 8%;
     }
 
     #showcase .showcase-btn {
-        margin-top: 6rem !important
+        margin-top: 6rem !important;
     }
 
     #about .about-descp-boxes h1 {
         font-size: 2.2rem;
-        margin-bottom: 0 !important
+        margin-bottom: 0 !important;
     }
 
     #about .about-descp-boxes .about-buttons {
-        padding-top: 0
+        padding-top: 0;
     }
 
     #about .about-descp-boxes .about-buttons .more-btn {
         font-size: 1.4rem;
         margin-right: 3.9rem;
-        padding: 8px 15px
+        padding: 8px 15px;
     }
 
     #about .about-descp-boxes .about-buttons .contact-btn {
         font-size: 1.4rem;
         margin-right: 3.9rem;
-        padding: 6px 13px
+        padding: 6px 13px;
     }
 
     .about-profile-img {
-        display: none
+        display: none;
     }
 
     .mapside {
-        padding-top: 3rem !important
+        padding-top: 3rem !important;
     }
 
     #service .service-boxes {
-        height: 28rem !important
+        height: 28rem !important;
     }
 
     .skills-images-boxes {
         width: 8rem;
         height: 8rem;
-        border: 8px solid #d5d5d5
+        border: 8px solid #d5d5d5;
     }
 
     .more-web-relate-knowladge {
         padding-left: 12rem;
-        padding-right: 12rem
+        padding-right: 12rem;
     }
 
     .all-slikls-boxes h1 {
         font-size: 1.5rem;
-        font-weight: 700
+        font-weight: 700;
     }
 }
 
 @media (max-width:768px) {
     .responsive-row {
-        height: 63px
+        height: 63px;
     }
 
     .header nav ul {
         display: block;
-        margin-bottom: 0
+        margin-bottom: 0;
     }
 
     .checktbn {
-        display: block !important
+        display: block !important;
     }
 
     .navManu {
         transform: scaleX(0);
-        transform-origin: left
+        transform-origin: left;
     }
 
     .nav-wrapper {
-        padding-left: 0
+        padding-left: 0;
     }
 
     .navManuAss {
@@ -869,13 +957,13 @@ footer .footer-descp p {
         z-index: 999;
         top: 63px;
         transition: all .2s;
-        left: 0
+        left: 0;
     }
 
     .navManuAss li {
         margin-right: 0;
         margin-top: 3rem;
-        display: block
+        display: block;
     }
 
     .navManuAss li a {
@@ -883,164 +971,164 @@ footer .footer-descp p {
         font-size: 1.5rem;
         transition: all .3s;
         font-weight: 700;
-        text-align: center
+        text-align: center;
     }
 
     .navManuAss li:first-child a {
-        color: #ff5200
+        color: #ff5200;
     }
 
     .navManuAss li:last-child {
-        margin-right: 0
+        margin-right: 0;
     }
 
     .navManuAss li:hover a {
-        color: #ff5200
+        color: #ff5200;
     }
 
     .header .uk-active a {
-        color: #fefefe
+        color: #fefefe;
     }
 
     .header nav ul li {
         margin-right: 0;
-        padding: 1.5rem 0
+        padding: 1.5rem 0;
     }
 
     #showcase .showcase-btn {
-        margin-top: 8rem
+        margin-top: 8rem;
     }
 
     #about .about-buttons {
-        padding: 2rem 0 !important
+        padding: 2rem 0 !important;
     }
 
     #service .service-boxes {
-        margin-bottom: 8rem !important
+        margin-bottom: 8rem !important;
     }
 
     #service .service-boxes h1 {
-        margin-bottom: 1.5rem !important
+        margin-bottom: 1.5rem !important;
     }
 
     #service .title {
-        padding-bottom: 9rem
+        padding-bottom: 9rem;
     }
 
     #achievement .achive-boxes {
-        margin-bottom: 2rem !important
+        margin-bottom: 2rem !important;
     }
 
     #invite .invite-boxes {
-        margin-bottom: 6rem !important
+        margin-bottom: 6rem !important;
     }
 
     section#invite .title {
-        padding-bottom: 13rem
+        padding-bottom: 13rem;
     }
 
     #about .about-border {
         border: none;
-        box-shadow: none
+        box-shadow: none;
     }
 
     .about-image-boxes {
         width: 94%;
         margin: 0 auto;
-        box-shadow: 0 0 10px var(--chandan-bg)
+        box-shadow: 0 0 10px var(--chandan-bg);
     }
 
     #about .container-lg {
-        padding-left: 1.5rem !important
+        padding-left: 1.5rem !important;
     }
 
     #about .about-image-pad {
-        padding-left: 1.5rem
+        padding-left: 1.5rem;
     }
 
     #service .service-boxes {
-        height: 25rem !important
+        height: 25rem !important;
     }
 
     .basic-web-dev-skills {
         padding-left: 1rem;
-        padding-right: 1rem
+        padding-right: 1rem;
     }
 }
 
 @media (min-width:575px) {
     .about-profile-img-1 {
-        display: none
+        display: none;
     }
 }
 
 @media (max-width:575px) {
     .title {
-        width: 100% !important
+        width: 100% !important;
     }
 
     #showcase .showcase-title h1 {
-        font-size: 3.3rem !important
+        font-size: 3.3rem !important;
     }
 
     .header .showcase-title p {
-        font-size: 2rem
+        font-size: 2rem;
     }
 
     #showcase .showcase-social-icon {
-        padding-top: 1rem
+        padding-top: 1rem;
     }
 
     .about-profile-img-2 {
-        display: none
+        display: none;
     }
 
     .about-profile-img-1 {
-        display: block
+        display: block;
     }
 
     .s-title {
-        font-size: 3.5rem !important
+        font-size: 3.5rem !important;
     }
 
     #about .about-descp-boxes p {
-        padding-top: .5rem
+        padding-top: .5rem;
     }
 
     .basic-web-dev-skills,
     .more-web-relate-knowladge {
         padding-left: 0;
-        padding-right: 0
+        padding-right: 0;
     }
 
     section#invite .title {
-        padding-bottom: 10rem
+        padding-bottom: 10rem;
     }
 }
 
 @media (max-width:450px) {
     .header {
-        height: 500px !important
+        height: 500px !important;
     }
 
     .header .showcase-title p {
-        font-size: 2.1rem
+        font-size: 2.1rem;
     }
 
     #about .about-buttons {
         display: grid !important;
-        place-items: center !important
+        place-items: center !important;
     }
 
     #about .about-buttons button {
-        margin: 1rem 0 !important
+        margin: 1rem 0 !important;
     }
 
     #service {
-        margin-top: 6rem !important
+        margin-top: 6rem !important;
     }
 
     .header #showcase .showcase-btn ul a {
-        font-size: 1.4rem
+        font-size: 1.4rem;
     }
 }

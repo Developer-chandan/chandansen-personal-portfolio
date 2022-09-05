@@ -1,6 +1,28 @@
-// document.querySelector("#checkbutton").addEventListener("click",function(){
-//   document.querySelector("#navbar").setAttribute("class","navManuAss");
-// });
+//Navbar code
+// Header Scroll
+let nav = document.querySelector(".navbar");
+window.onscroll = function () {
+    if(document.documentElement.scrollTop > 20){
+        nav.classList.add("header-scrolled");
+    }else{
+        nav.classList.remove("header-scrolled");
+    }
+} 
+
+// nav hide 
+let navBar = document.querySelectorAll(".nav-link");
+let navCollapse = document.querySelector(".navbar-collapse.collapse");
+navBar.forEach(function (a){
+    a.addEventListener("click", function(){
+        navCollapse.classList.remove("show");
+    })
+})
+ 
+
+
+
+
+// typing js code 
 
 $(document).ready(function () {
   var typed = new Typed(".typing", {
@@ -12,11 +34,11 @@ $(document).ready(function () {
 })
 
 
-const toggleButton = document.querySelector("#checkbutton");
-const navbarLinks = document.querySelector("#navbar");
-toggleButton.addEventListener("click", function () {
-  navbarLinks.classList.toggle("navManuAss")
-})
+// const toggleButton = document.querySelector("#checkbutton");
+// const navbarLinks = document.querySelector("#navbar");
+// toggleButton.addEventListener("click", function () {
+//   navbarLinks.classList.toggle("navManuAss")
+// })
 
 
 
@@ -45,5 +67,7 @@ toggleButton.addEventListener("click", function () {
 
     const next_page = document.querySelector(`.pages .page[data-page="${page_id}"]`);
     
-    next_page.classList.add('is-active');
+   next_page.classList.add('is-active');
   }
+
+

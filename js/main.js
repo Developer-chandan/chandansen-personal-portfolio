@@ -34,14 +34,6 @@ $(document).ready(function () {
 })
 
 
-// const toggleButton = document.querySelector("#checkbutton");
-// const navbarLinks = document.querySelector("#navbar");
-// toggleButton.addEventListener("click", function () {
-//   navbarLinks.classList.toggle("navManuAss")
-// })
-
-
-
 //Portfolio Websites
 
 
@@ -71,3 +63,46 @@ $(document).ready(function () {
   }
 
 
+
+
+  //animate number counter
+
+
+  const workSection = document.querySelector("#achievement");
+
+  const workSectionObserve = (entries) => {
+      const [entry] = entries;
+      if (!entry.isIntersecting) return;
+      console.log(entries);
+  
+  
+      const counterNum = document.querySelectorAll(".counter-numbers");
+      // console.log(counterNum);
+      const speed = 47;
+  
+      counterNum.forEach((curNumber) => {
+          const updateNumber = () => {
+              const targetNumber = parseInt(curNumber.dataset.number);
+           
+              const initialNumber = parseInt(curNumber.innerText);
+       
+              const incrementNumber = Math.trunc(targetNumber / speed);
+  
+              if (initialNumber < targetNumber) {
+                  curNumber.innerText = `${initialNumber + incrementNumber}+`;
+                  setTimeout(updateNumber, 40);
+              } else {
+                  curNumber.innerText = `${targetNumber}+`;
+              }
+  
+          };
+          updateNumber();
+      });
+  };
+  
+  const workSecObserver = new IntersectionObserver(workSectionObserve, {
+      root: null,
+      threshold: 0,
+  });
+  
+  workSecObserver.observe(workSection);

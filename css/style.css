@@ -1,3 +1,24 @@
+
+/* 
+
+
+sequence of styling section
+--------------------------
+header
+showcase
+about 
+services 
+skills 
+portfolio 
+client review 
+achivement 
+invite 
+contact 
+footer  
+
+*/
+
+
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100; 300; 400; 500; 700;800; 900&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
 * {
@@ -88,6 +109,7 @@ a{
 
 }
 
+
 .btn-primary,
 .btn-trans,
 .btn-outline-dark:hover{
@@ -137,20 +159,23 @@ a{
     background-repeat: no-repeat;
     position: relative;
     background-attachment: fixed;
+    z-index: 9999;
+    margin-bottom: 21rem !important;
 }
 
 
 
- /* header #showcase::before {
+#header::before {
     content: "";
     position: absolute;
     width: 100%;
     height: 11rem;
-    background: #111015;
+    background: rgb(0 0 0);
     bottom: -10rem;
     transform-origin: left;
     transform: skewY(-3deg); 
-}  */
+    z-index: -1;
+} 
 
 /* nav  */
 .header_wrapper .navbar {
@@ -158,8 +183,6 @@ a{
     -webkit-transition: all .2s linear;
     -o-transition: all .2s linear;
     transition: all .2s linear;
-    /* box-shadow: -3px 0px 3px 0px var(--light-purple); */
-
 }
 
 
@@ -231,7 +254,7 @@ a{
 /* header  */
 /* showcase  */
 .header #showcase {
-    padding-top: 14rem;
+    padding-top: 15rem;
 }
 
 .header #showcase .showcase-title h1 {
@@ -275,13 +298,13 @@ a{
 }
 
 .header #showcase .showcase-image {
-    width: 36rem;
-    float: right;
     padding-top: 3rem;
+    display: flex;
+    justify-content: center;
 }
 
 .header #showcase .showcase-image img {
-    border: 4px solid var(--light-purple);
+    border: 4px solid var(--chandan-bg);
 }
 
 
@@ -289,20 +312,7 @@ a{
     margin-top: 7rem;
 }
 
-/* .header #showcase .showcase-btn ul .protfolio-btn {
-    background: var(--blsack);
-    border: 2px solid var(--white);
-}
 
-.header #showcase .showcase-btn ul .protfolio-btn:hover {
-    background: var(--chandan-bg);
-    color: var(--white);
-    border: 2px solid var(--chandan-bg);
-} */
-
-/* .header #showcase .showcase-btn ul .hire-btn {
-    border: 2px solid var(--chandan-bg);
-} */
 
 .header #showcase .showcase-btn>ul {
     margin-top: 7rem;
@@ -311,11 +321,6 @@ a{
     justify-content: space-between;
 }
 
-/* .header #showcase .showcase-btn ul .hire-btn:hover {
-    background: #0000;
-    color: #fff;
-    border: 2px solid #fff;
-} */
 
 .header .showcase-title p {
     font-size: 3rem;
@@ -328,26 +333,17 @@ a{
     color: var(--chandan-bg);
 }
 
-/* .header #showcase .showcase-btn ul a {
-    text-transform: uppercase;
-    color: #fff;
-    background: var(--purple-orange);
-    padding: 8px 20px;
-    text-decoration: none;
-    border-radius: 28px;
-    transition: all .3s;
-} */
-
 
 /* about  */
 section#about {
-    padding-top: 10rem;
-    background:url('/img/round-with-dotted.png');
+    
+    background: url(/img/round-with-dotted.png);
     background-position: right;
     background-repeat: no-repeat;
     background-size: 21rem;
     background-attachment: fixed;
-    padding-bottom: 8rem;
+    padding-bottom: 8rem !important;
+   
 }
 .about-main-wrapper {
     box-shadow: 0px 3px 16px 0px var(--gray);
@@ -365,7 +361,16 @@ section#about {
 /* .image-decroration-bar{
 
 } */
-.image-decroration-top-left-bar span:first-child{
+
+
+.image-decroration-top-left-bar span:first-child,
+.image-decroration-top-left-bar span:last-child,
+.image-decroration-top-right-bar span:first-child,
+.image-decroration-top-right-bar span:last-child,
+.image-decroration-bottom-right-bar span:first-child,
+.image-decroration-bottom-right-bar span:last-child,
+.image-decroration-bottom-left-bar span:first-child,
+.image-decroration-bottom-left-bar span:last-child{
     position: absolute;
     content: "";
     width: 6rem;
@@ -375,76 +380,46 @@ section#about {
 }
 
 .image-decroration-top-left-bar span:last-child{
-    position: absolute;
-    content: "";
-    width: 6rem;
-    height: 4px;
-    background: var(--purple-orange);
+  
     transform-origin: left;
     transform: rotate(90deg);
       
 }
 
 .image-decroration-top-right-bar span:first-child{
-    position: absolute;
-    content: "";
+  
     right: 0;
-    width: 6rem;
-    height: 4px;
-    background: var(--purple-orange);
     transform-origin: right;
     transform: rotate(0deg);
 }
 .image-decroration-top-right-bar span:last-child{
-    position: absolute;
-    content: "";
+  
     right: 0;
-    width: 6rem;
-    height: 4px;
-    background: var(--purple-orange);
     transform-origin: right;
     transform: rotate(270deg);
 }
 
 .image-decroration-bottom-right-bar span:first-child{
-    position: absolute;
-    content: "";
-    width: 6rem;
+  
     right: 0;
-    height: 4px;
-    background: var(--purple-orange);
     transform-origin: right;
    
 }
 
 .image-decroration-bottom-right-bar span:last-child{
-    position: absolute;
-    content: "";
-    width: 6rem;
+
     right: 0;
-    height: 4px;
-    background: var(--purple-orange);
     transform-origin: right;
     transform: rotate(90deg);
       
 }
 .image-decroration-bottom-left-bar span:first-child{
-    position: absolute;
-    content: "";
-    width: 6rem;
-    
-    height: 4px;
-    background: var(--purple-orange);
+
     transform-origin: right;
    
 }
 
 .image-decroration-bottom-left-bar span:last-child{
-    position: absolute;
-    content: "";
-    width: 6rem;
-    height: 4px;
-    background: var(--purple-orange);
     transform-origin: left;
     transform: rotate(270deg);
       
@@ -496,6 +471,7 @@ section#about {
     bottom: -44px;
     right: -43px;
 }
+
 .image-decroration-bar{
     transform: scale(1);
     transition: all .4s;
@@ -656,9 +632,6 @@ section#about {
 
 .pages .page.is-active{
     display: flex;
-/* display: grid; */
-/* grid-template-columns: repeat(3, 1fr); */
-/* grid-gap: 2.5rem; */
 }
 
 /* cliant-reviw start */
@@ -964,11 +937,7 @@ section#client-review{
     text-transform: capitalize;
     font-family: 'Open Sans', sans-serif;
 }
-/* .title h1.g-color{
-    color: var(--gradient-text);
-    -webkit-background-clip: text;
-    
-} */
+
 
 section#all-skills {
     
@@ -1056,7 +1025,8 @@ section#all-skills .subtitle{
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: #fff;
-    padding-bottom: 2rem;
+    padding-bottom: 7rem !important;
+    padding-top: 5rem !important;
 }
 
 #achievement .title {
@@ -1245,17 +1215,6 @@ footer .footer-descp p {
 
 /* about  */
 
-    /* #about .about-descp-boxes {
-        margin-top: 0;
-    }
-
-    #about .about-descp-boxes h1 {
-        font-size: 2.5rem;
-    }
-
-    #about .about-descp-boxes .about-buttons {
-        padding-top: 2rem;
-    } */
 
     .progress-bar {
         text-align: end;
@@ -1269,6 +1228,8 @@ footer .footer-descp p {
 }
 
 @media (max-width:991px) {
+
+    
 h1{
     font-size: 4rem;
 }
@@ -1340,10 +1301,7 @@ margin: 0 auto;
     }
 /* skills  */
 
-/* .pages .page.is-active {
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 3rem;
-} */
+
    
     .listing-carousel-button {
       
@@ -1402,34 +1360,7 @@ margin: 0 auto;
     bottom: -44px;
     right: -43px;
 }
-
-
-
-
-    /* #about .about-descp-boxes h1 {
-        font-size: 2.2rem;
-        margin-bottom: 0 !important;
-    }
-
-    #about .about-descp-boxes .about-buttons {
-        padding-top: 0;
-    }
-
-    #about .about-descp-boxes .about-buttons .more-btn {
-        font-size: 1.4rem;
-        margin-right: 3.9rem;
-        padding: 8px 15px;
-    }
-
-    #about .about-descp-boxes .about-buttons .contact-btn {
-        font-size: 1.4rem;
-        margin-right: 3.9rem;
-        padding: 6px 13px;
-    }
-
-    .about-profile-img {
-        display: none;
-    } */
+/* service  */
 
     .mapside {
         padding-top: 3rem !important;
@@ -1456,11 +1387,13 @@ margin: 0 auto;
     }
     .portfolio-projects-tabs{
         width: 100%;
+        padding: 0rem 0;
     }
-  
-
     
 }
+
+
+
 
 @media (max-width:767px) {
     h1{
@@ -1469,6 +1402,8 @@ margin: 0 auto;
     .responsive-row {
         height: 63px;
     }
+
+    /* header  */
 
     .header {
         height: 580px !important;
@@ -1486,7 +1421,13 @@ margin: 0 auto;
     }
 
 
-
+/* about  */
+section#about {
+   
+    background-size: 14rem;
+   
+   
+}
     .about-main-wrapper{
         width: 95%;
         padding: 4rem 1rem 5rem 1rem;
@@ -1507,11 +1448,23 @@ margin: 0 auto;
         padding-left: 3rem;
         padding-right: 3rem;
     }
- 
-    /* #about .about-buttons {
-        padding: 2rem 0 !important;
-    } */
+    .image-decroration-top-left-bar span:first-child,
+.image-decroration-top-left-bar span:last-child,
+.image-decroration-top-right-bar span:first-child,
+.image-decroration-top-right-bar span:last-child,
+.image-decroration-bottom-right-bar span:first-child,
+.image-decroration-bottom-right-bar span:last-child,
+.image-decroration-bottom-left-bar span:first-child,
+.image-decroration-bottom-left-bar span:last-child{
+    
+    width: 4rem;
+    height: 3px;
 
+   
+}
+
+ /* services  */
+ 
     #service .service-boxes {
         margin-bottom: 8rem !important;
     }
@@ -1523,10 +1476,7 @@ margin: 0 auto;
     #service .title {
         padding: 0 2rem 9rem 2rem;
     }
-    /* .pages .page.is-active {
-        grid-template-columns: 1fr;
-        grid-gap: 3rem;
-    } */
+   
     .portfolio-title-content p {
          width: 80%;
         padding: 1rem 0;
@@ -1544,25 +1494,7 @@ margin: 0 auto;
         padding-bottom: 13rem;
     }
 
-    /* #about .about-wrap {
-        border: none;
-        box-shadow: none;
-    }
-
-    .about-image-boxes {
-        width: 94%;
-        margin: 0 auto;
-        box-shadow: 0 0 10px var(--chandan-bg);
-    }
-
-    #about .container-lg {
-        padding-left: 1.5rem !important;
-    }
-
-    #about .about-image-pad {
-        padding-left: 1.5rem;
-    } */
-
+ 
     #service .service-boxes {
         height: 25rem !important;
     }
@@ -1575,6 +1507,10 @@ margin: 0 auto;
     .listing-carousel-button{
         width: 50px;
     }
+    /* portfolio projects  */
+
+  
+    /* client review  */
     .testimonials-text {
         padding: 73px 77px 75px;
         
@@ -1584,12 +1520,7 @@ margin: 0 auto;
     }
 }
 
-/* @media (min-width:992px) {
-    .about-profile-img-1 {
-        display: none;
-    }
 
-} */
 
 @media (max-width:575px) {
     h1{
@@ -1598,6 +1529,7 @@ margin: 0 auto;
     .title {
         width: 100% !important;
     }
+    /* header  */
 
     #showcase .showcase-title h1 {
         font-size: 3.3rem !important;
@@ -1609,6 +1541,15 @@ margin: 0 auto;
 
     #showcase .showcase-social-icon {
         padding-top: 1rem;
+    }
+    /* about  */
+    section#about {
+        background-size: 8rem;
+       
+       
+    }
+    .about-image-wrapper {
+        width: 85%;
     }
     .about-description-wrapper .download-resume {
         flex-direction: column;
@@ -1632,22 +1573,27 @@ margin: 0 auto;
         width: 98%;
         padding: 4rem 1rem 5rem 1rem;
     }
-    /* .about-profile-img-2 {
-        display: none;
-    } */
 
-    /* .about-profile-img-1 {
-        display: block;
-    } */
-
+    .image-decroration-top-left-bar span:first-child,
+    .image-decroration-top-left-bar span:last-child,
+    .image-decroration-top-right-bar span:first-child,
+    .image-decroration-top-right-bar span:last-child,
+    .image-decroration-bottom-right-bar span:first-child,
+    .image-decroration-bottom-right-bar span:last-child,
+    .image-decroration-bottom-left-bar span:first-child,
+    .image-decroration-bottom-left-bar span:last-child{
+        
+        width: 3.5rem;
+        height: 3px;
+    
+       
+    }
+ 
     .s-title {
         font-size: 3.5rem !important;
     }
 
-    /* #about .about-descp-boxes p {
-        padding-top: .5rem;
-    } */
-
+ 
     .basic-web-dev-skills,
     .more-web-relate-knowladge {
         padding-left: 0;
@@ -1679,14 +1625,7 @@ margin: 0 auto;
         font-size: 2.1rem;
     }
 
-    /* #about .about-buttons {
-        display: grid !important;
-        place-items: center !important;
-    }
-
-    #about .about-buttons button {
-        margin: 1rem 0 !important;
-    } */
+  
 
     #service {
         margin-top: 6rem !important;

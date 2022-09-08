@@ -679,7 +679,7 @@ section#client-review{
 	font-size: 34px;
 	position: relative;
 }
-.section-separator {
+/* .section-separator {
 	float: left;
 	width: 100%;
 	position: relative;
@@ -696,7 +696,7 @@ section#client-review{
 	z-index: 2;
 	background-color: var(--light-purple);
 	margin-left: -25px;
-}
+} */
 .swiper-container {
 	width: 100%;
 	height: 100%;
@@ -1062,19 +1062,18 @@ section#all-skills .subtitle{
     text-align: center;
 }
 
-#achievement .achive-boxes i {
-    font-size: 4rem;
-    margin-right: 2.5rem;
-}
 
-#achievement .achive-boxes strong {
-    font-size: 4rem;
+
+#achievement .achive-boxes strong,
+#achievement .achive-boxes i  {
+    font-size: 3rem;
     margin-left: 2.5rem;
 }
 
 #achievement .achive-boxes h2 {
     text-transform: uppercase;
     color: #fff !important;
+    font-size: 2rem;
 }
 
 /* ------------------
@@ -1091,6 +1090,10 @@ section#invite .title {
     height: 18rem;
     padding: 0 20px;
     position: relative;
+    transition: all .3s;
+}
+#invite .invite-boxes:hover{
+    background: var(--gray);
 }
 
 #invite .invite-boxes .invite-icon {
@@ -1134,6 +1137,9 @@ section#invite .title {
         contact 
 ------------------ */
 
+section#contact {
+    padding-bottom: 4rem;
+}
 #contact .contact-side input,
 #contact .contact-side textarea {
     border: 0 !important;
@@ -1249,7 +1255,7 @@ text-align: center;
 margin-top: 2rem;
 }
 .col-sm-4.footer-services-wrapper h2 {
-    padding-right: 7rem;
+    padding-right: 4rem;
 }
 /*-----------------
  footer 
@@ -1613,11 +1619,16 @@ section#about {
     .testimonials-carousel .swiper-slide {
         padding: 36px 0 0 0;
     }
+    /* footer  */
+    #footer {
+        background: var(--black);
+        padding: 7rem 0 1rem 0;
+    }
 }
 
 
 
-@media (max-width:575px) {
+@media (max-width:576px) {
     h1{
         font-size: 2.5rem;
     }

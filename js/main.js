@@ -90,7 +90,7 @@ $(document).ready(function () {
   
               if (initialNumber < targetNumber) {
                   curNumber.innerText = `${initialNumber + incrementNumber}+`;
-                  setTimeout(updateNumber, 40);
+                  setTimeout(updateNumber, 50);
               } else {
                   curNumber.innerText = `${targetNumber}+`;
               }

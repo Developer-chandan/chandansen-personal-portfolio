@@ -47,6 +47,7 @@ html {
     --gradient-text:linear-gradient(to right, #d0ce30 0%, #671708 100%);
     --light-purple: #d405f3;
     --purple-orange: linear-gradient(126deg, rgb(255 82 0 / 87%), rgb(249 21 255 / 97%));
+    --dark-purple:rgb(71 4 75);
 }
 
 body {
@@ -1068,14 +1069,25 @@ section#all-skills .subtitle{
     background: #000;
     padding: 1rem 0;
     text-align: center;
+    padding: 1rem;
+    transition: all .3s ease-in-out;
+}
+#achievement .achive-boxes:hover{
+    background: var(--dark-purple);
 }
 
+#achievement .achive-boxes .achievement-icon-amount{
+    display: flex;
+    justify-content: space-evenly;
+    
+    align-items: center;
+    
 
+}
 
 #achievement .achive-boxes strong,
 #achievement .achive-boxes i  {
     font-size: 3rem;
-    margin-left: 2.5rem;
 }
 
 #achievement .achive-boxes h2 {

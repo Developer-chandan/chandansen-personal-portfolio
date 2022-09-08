@@ -283,6 +283,7 @@ header
 
 .header #showcase .showcase-social-icon li a {
     background: #0000;
+
     width: 3.5rem;
     height: 3.5rem;
     border: 1px solid #ddd;
@@ -309,8 +310,15 @@ header
 
 .header #showcase .showcase-image img {
     border: 4px solid var(--chandan-bg);
+    transform: scale(1);
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
-
+.header #showcase .showcase-image img:hover{
+    transform: scale(1.1);
+}
 
 .header #showcase .showcase-btn {
     margin-top: 7rem;
@@ -1230,7 +1238,7 @@ textarea:focus {
 color: var(--chandan-bg);
 }
 
-.showcase-social-icon li a{
+#footer .showcase-social-icon li a{
     display: flex;
     padding-left: 1rem;
 }

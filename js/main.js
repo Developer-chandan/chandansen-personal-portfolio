@@ -1,5 +1,17 @@
+// sequence of scrpit writing 
+// navbarcode
+// typing js 
+// portfolio section 
+// animate number counter 
+// client review / testimonial 
+
+
+
+
+
 //Navbar code
 // Header Scroll
+
 let nav = document.querySelector(".navbar");
 window.onscroll = function () {
     if(document.documentElement.scrollTop > 20){
@@ -73,7 +85,7 @@ $(document).ready(function () {
   const workSectionObserve = (entries) => {
       const [entry] = entries;
       if (!entry.isIntersecting) return;
-      console.log(entries);
+  
   
   
       const counterNum = document.querySelectorAll(".counter-numbers");

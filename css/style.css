@@ -1,7 +1,5 @@
 
 /* 
-
-
 sequence of styling section
 --------------------------
 body default and buttons
@@ -165,7 +163,7 @@ header
     position: relative;
     background-attachment: fixed;
     z-index: 9999;
-    margin-bottom: 21rem !important;
+    margin-bottom: 18rem !important;
 }
 
 
@@ -318,7 +316,7 @@ header
     transition: all .3s ease-in-out;
 }
 .header #showcase .showcase-image img:hover{
-    transform: scale(1.1);
+    transform: scale(1.08);
 }
 
 .header #showcase .showcase-btn {
@@ -353,7 +351,7 @@ about
 -------------------------*/
 section#about {
     
-    background: url(/img/round-with-dotted.png);
+    /* background: url(/img/round-with-dotted.png); */
     background-position: right;
     background-repeat: no-repeat;
     background-size: 21rem;
@@ -362,8 +360,9 @@ section#about {
    
 }
 .about-main-wrapper {
-    box-shadow: 0px 3px 16px 0px var(--gray);
+    box-shadow: 0px 3px 16px 0px #a9a9a9;
     padding: 7rem;
+    border-radius: 10px;
 }
 .about-image{
     display: flex;
@@ -661,7 +660,7 @@ portfolio website
 section#client-review{
 	
 	position: relative;
-	padding: 5rem 0;
+	padding: 8rem 0;
 	background: #fcfcfd;
 	z-index: 1;
 	width: 100%;
@@ -1509,6 +1508,13 @@ margin: 0 auto;
     .portfolio-projects-tabs{
         width: 100%;
         padding: 0rem 0;
+    }
+
+    /*------------------ 
+    client review 
+    --------------- */
+    .section#client-review{
+        padding: 4rem 0;
     }
     
 }

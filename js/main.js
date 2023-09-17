@@ -38,7 +38,7 @@ navBar.forEach(function (a){
 
 $(document).ready(function () {
   var typed = new Typed(".typing", {
-    strings: ["MERN Stack Web Developer", "Front End Web Developer", "HTML TO REACT Conversion Expert", "PSD TO HTML Conversion Expert", "WordPress Expert", "Freelancer", "Student of BSS Faculty"],
+    strings: ["Front End Web Developer", "FIGMA/XD/PSD TO HTML Conversion Expert", "HTML TO React/Next.js Conversion Expert", "Landing Page Expert", "MERN Stack Web Developer", "Top Rated Developer On Upwork", "UI/UX Designer and Consultant"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true

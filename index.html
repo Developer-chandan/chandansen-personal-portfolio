@@ -7,8 +7,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description"
     content="Hello, THis is chandan sen. Professional Front end web developer. I have been working with web developement last 2 years.">
-  <link rel="stylesheet icon" href="img/logo.png">
-  <!-- fontawesome cdn  -->
+
+    <link rel="stylesheet icon" href="img/logo.png">
+
+   <!-- aos animation  -->
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- fontawesome cdn  -->
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <!-- bootstrap style link  -->
@@ -17,10 +21,36 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css" />
   <!-- custom css link  -->
   <link rel="stylesheet" href="css/style.css">
+
   <title>Web developer chandan | Front end developer</title>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CVYH70DD4E"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CVYH70DD4E');
+</script>
 
 
-</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="75">
 
@@ -63,6 +93,10 @@
               </li>
   
             </ul>
+            <div class="meeting_schedule d-none d-xl-block">
+              <a href="https://calendly.com/chandansen/30min"
+              class="btn btn-outline-dark">Sechdule A Meeting</a>
+            </div>
           </div>
         </div>
       </nav>
@@ -71,11 +105,11 @@
         <div class="container-lg">
           <div class="row">
             <div class="col-lg-6 showcase-wrapper">
-              <div class="showcase-title">
+              <div class="showcase-title"  data-aos="fade">
                 <h1>Chandan <strong>Sen.</strong> </h1>
                 <p>I'm a <span class="typing"></span></p>
               </div>
-              <ul class="showcase-social-icon clearfix">
+              <ul class="showcase-social-icon clearfix" data-aos="fade">
                 <li title="Facebook" ><a target="_blank" href="https://www.facebook.com/MrSenTonmoy"><i
                       class="fab fa-facebook-f"></i></a></li>
                 <li title="Upwork" class="upwork"><a target="_blank" href="https://www.upwork.com/freelancers/~015f436355bed2f35f"><svg viewBox="0 0 2500 2500" xmlns="http://www.w3.org/2000/svg"><path d="m2315.4 0h-2130.7c-102 0-184.7 80.2-184.7 179.1v2141.7c0 99 82.7 179.2 184.7 179.2h2130.7c102 0 184.6-80.3 184.6-179.2v-2141.7c0-98.9-82.6-179.1-184.6-179.1z" fill="#6fda44"/><path d="m1834.6 1453.7c-98.4 0-190.5-41.7-274.3-109.6l20.4-95.8.9-3.5c18.2-102 75.8-273.3 253-273.3 132.9 0 241 108.3 241 241.3-.4 132.6-108.5 240.9-241 240.9zm0-726.7c-226.4 0-401.9 147.3-473.2 389.5-109-163.7-191.4-360.2-239.7-525.7h-243.6v634.8c0 125.1-101.9 227.1-226.9 227.1s-226.8-102-226.8-227.1v-634.8h-243.7v634.8c-.9 260 210.5 473.4 470.1 473.4s471-213.4 471-473.4v-106.5c47.4 98.9 105.4 198.7 175.9 287.5l-149.3 702.7h249.5l108.1-509.7c94.8 60.8 203.8 98.9 328.8 98.9 267.2 0 484.7-219.2 484.7-486.7-.2-267-217.7-484.8-484.9-484.8z" fill="#fff"/></svg></a></li>
@@ -98,7 +132,7 @@
               </div>
             </div>
             <div class="col-lg-6 d-lg-block d-none">
-              <div class="showcase-image">
+              <div class="showcase-image" data-aos="fade">
                 <img src="img/chandan.png" alt="chandan-sen-profile" class="img-fluid">
               </div>
             </div>
@@ -117,8 +151,8 @@
 
         <div class="row">
 
-          <div class="col-lg-5 about-image">
-            <div class="about-image-wrapper">
+          <div class="col-lg-5 about-image" >
+            <div class="about-image-wrapper" data-aos="fade">
               <div class="image-decroration-top-left-bar image-decroration-bar">
                 <span></span>
                 <span></span>
@@ -142,10 +176,10 @@
             </div>
           </div>
           <div class="col-lg-7 about-description">
-            <div class="about-quote-icon about-quote-icon-left">
+            <div class="about-quote-icon about-quote-icon-left" >
               <i class="fas fa-quote-left"></i>
             </div>
-            <div class="about-description-wrapper">
+            <div class="about-description-wrapper" data-aos="fade">
               <h1>About Me</h1>
               <p>It is my pleasure to introduce myself as Chandan Sen, a freelance Front End Web Developer. Currently, I
                 am a student of economics at the University of Barishal, Bangladesh. As a web developer, I find it very
@@ -156,8 +190,10 @@
               <div class="download-resume mt-lg-5">
                 <a href="https://drive.google.com/file/d/1905EmFK6AfqsMIY_6T7mYPPEUBgxp7C8/view?usp=sharing"
                   target="_blank" class="btn btn-primary">Download Resume</a>
-                <a target="_blank" href="https://www.linkedin.com/in/chandan-sen-web-designer/"
-                  class="btn btn-light">Contact Me</a>
+                <a target="_blank" href="https://calendly.com/chandansen/30min"
+                  class="btn btn-light">Sechdule A Meeting</a>
+                <!-- <a target="_blank" href="https://www.linkedin.com/in/chandan-sen-web-designer/"
+                  class="btn btn-light">Contact Me</a> -->
 
               </div>
             </div>
@@ -179,7 +215,7 @@
     <div class="container-lg text-center">
       <div class="row">
         <div class="col-12">
-          <div class="title">
+          <div class="title" data-aos="fade">
             <h1 class="s-title">what I'll do for you</h1>
             <p class="subtitle">Using my expertise, I will help you increase your business profit. In addition to building websites, I am also passionate about front-end development, UI/UX design and improvement.
             </p>
@@ -188,7 +224,7 @@
       </div>
       <div class="row gx-5 gx-md-4 gx-xl-5 serice-boxes-wrapper">
 
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6" data-aos="fade">
           <div class="service-boxes">
             <div class="icon-box">
               <img src="/img/web-developmenet.png" alt="web-development" class="img-fluid">
@@ -199,7 +235,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6" data-aos="fade">
           <div class="service-boxes">
             <div class="icon-box">
               <img src="/img/landing-page (1).png" alt="landing page design" class="img-fluid">
@@ -212,7 +248,7 @@
           </div>
         </div>
      
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6" data-aos="fade">
           <div class="service-boxes">
             <div class="icon-box">
               <img src="/img/mockup-tp-html-css.png" alt="mockup to html css conversion" class="img-fluid">
@@ -223,7 +259,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6" data-aos="fade">
           <div class="service-boxes">
             <div class="icon-box">
               <img src="/img/design-to-react-next.png" alt="design to react or js" class="img-fluid">
@@ -235,7 +271,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6" data-aos="fade">
           <div class="service-boxes">
             <div class="icon-box">
               <img src="/img/ui.png" alt="ui/ux design and consultation" class="img-fluid">
@@ -247,7 +283,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6">
+        <div class="col-lg-4 col-md-6" data-aos="fade">
           <div class="service-boxes">
             <div class="icon-box">
               <img src="/img/page-speed.png" alt="website speed optimization and SEO" class="img-fluid">
@@ -269,7 +305,7 @@
   <section id="all-skills">
     <div class="container-lg">
       <div class="row">
-        <div class="col-12 title">
+        <div class="col-12 title" data-aos="fade">
           <h1 class="s-title">my expertise...</h1>
           <p class="subtitle">As you can see below, I've been learning those languages over the past two years.</p>
         </div>
@@ -277,28 +313,28 @@
       <div class="all-skills-boxeswrapper">
         <div class="basic-web-dev-skills">
 
-          <div class="all-slikls-boxes">
+          <div class="all-slikls-boxes" data-aos="fade">
             <div class="skills-images-boxes">
               <img src="img/html.jpg" alt="html" class="img-fluid">
             </div>
             <h1>Html 5</h1>
           </div>
 
-          <div class="all-slikls-boxes">
+          <div class="all-slikls-boxes" data-aos="fade">
             <div class="skills-images-boxes">
               <img src="img/css.jpg" alt="" class="img-fluid">
             </div>
             <h1>Css3</h1>
           </div>
 
-          <div class="all-slikls-boxes">
+          <div class="all-slikls-boxes" data-aos="fade">
             <div class="skills-images-boxes">
               <img src="img/bootstrap.jpg" alt="bootstrap" class="img-fluid">
             </div>
             <h1>Bootstrap</h1>
           </div>
 
-          <div class="all-slikls-boxes">
+          <div class="all-slikls-boxes" data-aos="fade">
             <div class="skills-images-boxes">
               <img src="img/tailwind.jpg" alt="tailwind" class="img-fluid">
             </div>
@@ -307,32 +343,32 @@
         </div>
         <div class="mern-stack-dev">
 
-          <div class="all-slikls-boxes">
+          <div class="all-slikls-boxes" data-aos="fade">
             <div class="skills-images-boxes">
               <img src="img/js.jpg" alt="javascript" class="img-fluid">
             </div>
             <h1>javascript</h1>
           </div>
 
-          <div class="all-slikls-boxes">
+          <div class="all-slikls-boxes" data-aos="fade">
             <div class="skills-images-boxes">
               <img src="img/react.jpg" alt="react js" class="img-fluid">
             </div>
             <h1>react js</h1>
           </div>
-          <div class="all-slikls-boxes">
+          <div class="all-slikls-boxes" data-aos="fade">
             <div class="skills-images-boxes">
               <img src="img/nextjs.png" alt="next js" class="img-fluid">
             </div>
             <h1>Next Js</h1>
           </div>
-          <div class="all-slikls-boxes">
+          <div class="all-slikls-boxes" data-aos="fade">
             <div class="skills-images-boxes">
               <img src="img/nodejs.jpg" alt="nodejs" class="img-fluid">
             </div>
             <h1>node js</h1>
           </div>
-          <div class="all-slikls-boxes">
+          <div class="all-slikls-boxes" data-aos="fade">
             <div class="skills-images-boxes">
               <img src="img/expressjs.jpg" alt="expressjs" class="img-fluid">
             </div>
@@ -342,25 +378,25 @@
 
         </div>
         <div class="more-web-relate-knowladge">
-          <div class="all-slikls-boxes">
+          <div class="all-slikls-boxes" data-aos="fade">
             <div class="skills-images-boxes">
               <img src="img/mongodb.jpg" alt="mongodb" class="img-fluid">
             </div>
             <h1>mongodb</h1>
           </div>
-          <div class="all-slikls-boxes">
+          <div class="all-slikls-boxes" data-aos="fade">
             <div class="skills-images-boxes">
               <img src="/img/firebase.jpg" alt="firebase" class="img-fluid">
             </div>
             <h1>firebase</h1>
           </div>
-          <div class="all-slikls-boxes">
+          <div class="all-slikls-boxes" data-aos="fade">
             <div class="skills-images-boxes">
               <img src="/img/seo image.png" alt="seo" class="img-fluid">
             </div>
             <h1>seo</h1>
           </div>
-          <div class="all-slikls-boxes">
+          <div class="all-slikls-boxes" data-aos="fade">
             <div class="skills-images-boxes">
               <img src="/img/ps.jpg" alt="photoshop" class="img-fluid">
             </div>
@@ -378,7 +414,7 @@
     <div class="container-lg">
 
       <div class="row">
-        <div class="col-12 title">
+        <div class="col-12 title" data-aos="fade">
           <h1 class="s-title g-color">Portfoilo Projects</h1>
         </div>
         <div class="portfolio-title-content subtitle">
@@ -416,7 +452,7 @@
         <div class="pages">
           <div class="page is-active row" data-page="1">
        
-            <div class="portfolio-box col-lg-4 col-md-6">
+            <div class="portfolio-box col-lg-4 col-md-6" data-aos="zoom-in">
               <div class="kalvos_app">
                 <img src="img/sass-landing-page.jpg" alt="sass landing page">
                 <div class="live-preview-overlay">
@@ -429,7 +465,7 @@
 
             </div>
 
-            <div class="portfolio-box col-lg-4 col-md-6">
+            <div class="portfolio-box col-lg-4 col-md-6" data-aos="zoom-in">
               <div class="kalvos_app">
                 <img src="img/figma-to-html-css3-bootstrap.jpg" alt="figma to html css security agency webiste">
                 <div class="live-preview-overlay">
@@ -441,7 +477,7 @@
               </div>
 
             </div>
-            <div class="portfolio-box col-lg-4 col-md-6">
+            <div class="portfolio-box col-lg-4 col-md-6" data-aos="zoom-in">
               <div class="kalvos_app">
                 <img src="img/figma-to-react-website.jpg" alt="figma to react lazy line web">
                 <div class="live-preview-overlay">
@@ -453,7 +489,7 @@
               </div>
 
             </div>
-            <div class="portfolio-box col-lg-4 col-md-6">
+            <div class="portfolio-box col-lg-4 col-md-6" data-aos="zoom-in">
               <div class="kalvos_app">
                 <img src="img/figma-to-html-review-webiste.jpg" alt="figma to html review website">
                 <div class="live-preview-overlay">
@@ -465,7 +501,7 @@
               </div>
 
             </div>
-            <div class="portfolio-box col-lg-4 col-md-6">
+            <div class="portfolio-box col-lg-4 col-md-6" data-aos="zoom-in">
               <div class="kalvos_app">
                 <img src="img/figma-to-html-css-bootstrap-5.jpg" alt="figma to html healthcare webiste">
                 <div class="live-preview-overlay">
@@ -478,7 +514,7 @@
 
             </div>
           
-            <div class="portfolio-box col-lg-4 col-md-6">
+            <div class="portfolio-box col-lg-4 col-md-6" data-aos="zoom-in">
               <div class="high-rise-box">
                 <img src="img/figma-to-html-css.jpg" alt="figma to html high rise media website">
                 <div class="live-preview-overlay">
@@ -490,7 +526,7 @@
               </div>
 
             </div>
-            <div class="portfolio-box col-lg-4 col-md-6">
+            <div class="portfolio-box col-lg-4 col-md-6" data-aos="zoom-in">
               <div class="ahmed-asif-box">
                 <img src="img/figma-to-html-css-bootstrap.jpg" alt="personal website building">
                 <div class="live-preview-overlay">
@@ -502,7 +538,7 @@
               </div>
 
             </div>
-            <div class="portfolio-box col-lg-4 col-md-6">
+            <div class="portfolio-box col-lg-4 col-md-6" data-aos="zoom-in">
               <div class="jib-box">
                 <img src="img/jib-photoshop1 (1).png" alt="">
                 <div class="live-preview-overlay">
@@ -514,7 +550,7 @@
               </div>
 
             </div>
-            <div class="portfolio-box col-lg-4 col-md-6">
+            <div class="portfolio-box col-lg-4 col-md-6" data-aos="zoom-in">
               <div class="brigade-box">
                 <img src="img/REAL ESTATE.png" alt="">
                 <div class="live-preview-overlay">
@@ -524,7 +560,7 @@
                 </div>
               </div>
             </div>
-            <div class="portfolio-box col-lg-4 col-md-6">
+            <div class="portfolio-box col-lg-4 col-md-6" data-aos="zoom-in">
               <div class="chandan-box">
                 <img src="img/chandan-sen (1).png" alt="">
                 <div class="live-preview-overlay">
@@ -534,7 +570,7 @@
                 </div>
               </div>
             </div>
-            <div class="portfolio-box col-lg-4 col-md-6">
+            <div class="portfolio-box col-lg-4 col-md-6" data-aos="zoom-in">
               <div class="simple_box">
                 <img src="img/currency.png" alt="">
                 <div class="live-preview-overlay">
@@ -544,7 +580,7 @@
                 </div>
               </div>
             </div>
-            <div class="portfolio-box col-lg-4 col-md-6">
+            <div class="portfolio-box col-lg-4 col-md-6" data-aos="zoom-in">
               <div class="simple_box">
                 <img src="img/HONDA-COMPANYT1.png" alt="">
                 <div class="live-preview-overlay">
@@ -558,7 +594,7 @@
           </div>
           <div class="page row" data-page="2">
           
-            <div class="portfolio-box col-lg-4 col-md-6">
+            <div class="portfolio-box col-lg-4 col-md-6" data-aos="zoom-in">
               <div class="kalvos_app">
                 <img src="img/sass-landing-page.jpg" alt="sass landing page">
                 <div class="live-preview-overlay">
@@ -570,7 +606,7 @@
               </div>
 
             </div>
-            <div class="portfolio-box col-lg-4 col-md-6">
+            <div class="portfolio-box col-lg-4 col-md-6" data-aos="zoom-in">
               <div class="kalvos_app">
                 <img src="img/figma-to-html-review-webiste.jpg" alt="figma to html review website">
                 <div class="live-preview-overlay">
@@ -582,7 +618,7 @@
               </div>
 
             </div>
-            <div class="portfolio-box col-lg-4 col-md-6">
+            <div class="portfolio-box col-lg-4 col-md-6" data-aos="zoom-in">
               <div class="kalvos_app">
                 <img src="img/figma-to-html-css3-bootstrap.jpg" alt="figma to html css security agency webiste">
                 <div class="live-preview-overlay">
@@ -594,7 +630,7 @@
               </div>
 
             </div>
-            <div class="portfolio-box col-lg-4 col-md-6">
+            <div class="portfolio-box col-lg-4 col-md-6" data-aos="zoom-in">
               <div class="kalvos_app">
                 <img src="img/figma-to-react-website.jpg" alt="figma to react lazy line web">
                 <div class="live-preview-overlay">
@@ -608,7 +644,7 @@
             </div>
           </div>
           <div class="page" data-page="3">
-            <div class="portfolio-box col-lg-4 col-md-6">
+            <div class="portfolio-box col-lg-4 col-md-6" data-aos="zoom-in">
               <div class="jib-box">
                 <img src="img/jib-photoshop1 (1).png" alt="">
                 <div class="live-preview-overlay">
@@ -620,7 +656,7 @@
               </div>
 
             </div>
-            <div class="portfolio-box col-lg-4 col-md-6">
+            <div class="portfolio-box col-lg-4 col-md-6" data-aos="zoom-in">
               <div class="brigade-box">
                 <img src="img/REAL ESTATE.png" alt="">
                 <div class="live-preview-overlay">
@@ -632,7 +668,7 @@
             </div>
           </div>
           <div class="page" data-page="4">
-            <div class="portfolio-box col-lg-4 col-md-6">
+            <div class="portfolio-box col-lg-4 col-md-6" data-aos="zoom-in">
               <div class="simple_box">
                 <img src="img/HONDA-COMPANYT1.png" alt="">
                 <div class="live-preview-overlay">
@@ -644,7 +680,7 @@
             </div>
           </div>
           <div class="page" data-page="5">
-            <div class="portfolio-box col-lg-4 col-md-6">
+            <div class="portfolio-box col-lg-4 col-md-6" data-aos="zoom-in">
               <div class="ahmed-asif-box">
                 <img src="img/figma-to-html-css-bootstrap.jpg" alt="personal website building">
                 <div class="live-preview-overlay">
@@ -656,7 +692,7 @@
               </div>
 
             </div>
-            <div class="portfolio-box col-lg-4 col-md-6">
+            <div class="portfolio-box col-lg-4 col-md-6" data-aos="zoom-in">
               <div class="high-rise-box">
                 <img src="img/figma-to-html-css.jpg" alt="figma to html high rise media website">
                 <div class="live-preview-overlay">
@@ -668,7 +704,7 @@
               </div>
 
             </div>
-            <div class="portfolio-box col-lg-4 col-md-6">
+            <div class="portfolio-box col-lg-4 col-md-6" data-aos="zoom-in">
               <div class="ahmed-asif-box">
                 <img src="img/chandan-sen (1).png" alt="personal website building">
                 <div class="live-preview-overlay">
@@ -685,7 +721,7 @@
 
           <div class="page" data-page="6">
          
-            <div class="portfolio-box col-lg-4 col-md-6">
+            <div class="portfolio-box col-lg-4 col-md-6" data-aos="zoom-in">
               <div class="kalvos_app">
                 <img src="img/figma-to-html-css-bootstrap-5.jpg" alt="figma to html healthcare webiste">
                 <div class="live-preview-overlay">
@@ -710,12 +746,12 @@
   <!-- cliant review  -->
   <section id="client-review">
     <div class="container">
-      <div class="section-title">
+      <div class="section-title" data-aos="fade">
         <h1>What Clients Say..</h1>
         <p class="subtitle">All of my client are happy to work with me. Check the review from upwork bellow</p>
       </div>
     </div>
-    <div class="testimonials-carousel-wrap">
+    <div class="testimonials-carousel-wrap" data-aos="fade">
       <div class="listing-carousel-button listing-carousel-button-next"><i class="fa fa-caret-right"
           style="color: #fff"></i></div>
       <div class="listing-carousel-button listing-carousel-button-prev"><i class="fa fa-caret-left"
@@ -836,7 +872,7 @@
     <div class="container-lg">
       <div class="row">
         <div class="col-12">
-          <div class="title">
+          <div class="title" data-aos="fade">
             <h1 class="s-title">life's journey</h1>
             <p class="subtitle">I'm an independent creative freelance Web designer and a very optimistic person about my
               career</p>
@@ -844,7 +880,7 @@
         </div>
       </div>
       <div class="row g-5 px-5 px-md-none">
-        <div class="col-lg-3 col-md-6">
+        <div class="col-lg-3 col-md-6" data-aos="fade">
           <div class="achive-boxes">
            <div class="achievement-icon-amount">
             <i class="far fa-handshake"></i>
@@ -853,7 +889,7 @@
             <h2>project done</h2>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6">
+        <div class="col-lg-3 col-md-6" data-aos="fade">
           <div class="achive-boxes">
             <div class="achievement-icon-amount">
               <i class="far fa-heart"></i>
@@ -862,7 +898,7 @@
             <h2>Happy client</h2>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6">
+        <div class="col-lg-3 col-md-6" data-aos="fade">
           <div class="achive-boxes">
             <div class="achievement-icon-amount" >
               <i class="far fa-moon"></i>
@@ -871,7 +907,7 @@
             <h2>sleepless night</h2>
           </div>
         </div>
-        <div class="col-lg-3 col-md-6">
+        <div class="col-lg-3 col-md-6" data-aos="fade">
           <div class="achive-boxes">
             
            <div class="achievement-icon-amount" >
@@ -889,12 +925,12 @@
   <section id="invite" style="padding-top:90px;padding-bottom:70px;">
     <div class="container-lg">
       <div class="row">
-        <div class="col-12 title">
+        <div class="col-12 title" data-aos="fade">
           <h1 class="s-title">Wanna invite me !</h1>
         </div>
       </div>
       <div class="row invite text-center">
-        <div class="col-md-4">
+        <div class="col-md-4" data-aos="fade">
           <div class="invite-boxes">
             <div class="invite-icon">
               <i class="fas fa-map-marker-alt"></i>
@@ -930,7 +966,7 @@
     </div>
   </section>
   <!--contact-section-->
-  <section id="contact">
+  <section id="contact" data-aos="fade">
     <div class="container-lg">
       <div class="row">
         <div class="col-md-6 contact-side">
@@ -1038,6 +1074,25 @@
  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script src="js/main.js"></script>
   <!-- <script src="js/testimonial.js"></script> -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200
+    });
+  </script>
+  <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/650ec9afb1aaa13b7a787a32/1hb0s7mru';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
 </body>
 
 </html>

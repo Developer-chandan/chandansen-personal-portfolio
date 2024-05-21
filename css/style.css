@@ -952,7 +952,7 @@ section#all-skills .subtitle {
     letter-spacing: 2px;
 }
 
-.basic-web-dev-skills, .mern-stack-dev, .more-web-relate-knowladge {
+.basic-web-dev-skills, .mern-stack-dev, .more-web-relate-knowladge, .other_tools {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -961,10 +961,10 @@ section#all-skills .subtitle {
 }
 
 .skills-images-boxes {
-    width: 12rem;
-    height: 12rem;
+    width: 10rem;
+    height: 10rem;
     display: flex;
-    border: 11px solid rgb(213, 213, 213);
+    border: 8px solid rgb(213 213 213 / 76%);
     border-radius: 50%;
     justify-content: space-around;
     align-items: center;
@@ -974,7 +974,7 @@ section#all-skills .subtitle {
     text-align: center;
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     letter-spacing: 2px;
     padding-top: 1rem;
 }
@@ -1000,7 +1000,7 @@ section#all-skills .subtitle {
 }
 
 #all-skills .title {
-    padding-bottom: 5rem;
+    padding-bottom: 1rem;
 }
 
 .all-slikls-boxes {

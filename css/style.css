@@ -118,7 +118,7 @@ a {
 }
 
 .header {
-    height: 655px;
+    height: 745px;
     background-size: cover;
     position: relative;
     background-attachment: fixed;
@@ -290,7 +290,7 @@ a {
 }
 
 .header #showcase .showcase-image {
-    padding-top: 3rem;
+    padding-top: 12rem;
     display: flex;
     justify-content: center;
 }
@@ -1010,7 +1010,11 @@ section#all-skills .subtitle {
     align-items: center;
     margin: 1rem;
 }
-
+h4.text-light.hello_caption {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    margin-bottom: 13px;
+}
 #achievement {
     background: linear-gradient(rgba(42, 41, 41, 0.97), rgba(11, 1, 1, 0.86), rgb(46, 18, 18), rgba(5, 14, 76, 0.85)) center center / cover no-repeat fixed, url("../img/achivement.jpg");
     color: rgb(255, 255, 255);

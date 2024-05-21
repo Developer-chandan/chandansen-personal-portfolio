@@ -718,6 +718,10 @@ section#client-review {
     left: 30px;
 }
 
+.invite-icon.whatsapp svg {
+    width: 40px;
+}
+
 .testimonials-text .listing-rating {
     float: none;
     display: inline-block;

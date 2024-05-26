@@ -249,11 +249,25 @@ section.our_projects {
     margin: 3rem 0;
 }
 
-h4.text-light.hello_caption {
-    font-size: 2rem;
-    letter-spacing: 1px;
+
+
+.review_photo_gallery div {
+    border: 1px solid #ddd;
 }
 
+.client_review_box img {
+    width: 95%;
+}
+.review_photo_gallery {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.review_photo_gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 @media(max-width: 992px) {
     .portfolio_desctiption {
         padding: 18px 1rem 0;
@@ -270,5 +284,12 @@ h4.text-light.hello_caption {
     .portfolio_desctiption h2 {
         font-size: 2.5rem;
         line-height: 124%;
+    }
+    .review_photo_gallery {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 0 1rem;
     }
 }

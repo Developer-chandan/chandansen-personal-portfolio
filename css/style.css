@@ -1237,6 +1237,12 @@ textarea:focus {
     padding-right: 4rem;
 }
 
+.section-title p {
+    font-size: 16px;
+    line-height: 24px;
+  
+}
+
 @media (max-width: 1400px) {
     #service .service-boxes {
         height: 38rem;

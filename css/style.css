@@ -1863,8 +1863,16 @@ section.our_projects {
 section#invite {
     padding: 1rem;
 }
+.header {
+    margin-bottom: 8rem !important;
+}
+.about-main-wrapper {
+    box-shadow: rgb(169 169 169 / 47%) 0px 3px 16px 0px;
 
-
+}
+section#about {
+    padding-bottom: 3rem !important;
+}
 }
 
 @media (max-width: 450px) {

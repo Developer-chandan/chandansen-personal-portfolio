@@ -1,4 +1,3 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"); */
 * {
     margin: 0px;
     padding: 0px;
@@ -70,10 +69,19 @@ h1 {
     font-size: 5rem;
 }
 
+html, 
+body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+  
 
+  
+  
+/* 
 
 ::-webkit-scrollbar {
-    width: 8px;
+    width: 5px;
 }
 
 ::-webkit-scrollbar-track {
@@ -82,7 +90,7 @@ h1 {
 
 ::-webkit-scrollbar-thumb {
     background: var(--light-purple);
-}
+} */
 
 body p {
     letter-spacing: 0.3px;
@@ -1284,6 +1292,49 @@ textarea:focus {
   
 }
 
+.whatsApp_sideIcon{
+    /* position: absolute; */
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: red;
+}
+.whatsApp_sideIcon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background: #ffffff;
+    display: grid
+;
+    place-items: center;
+    border-radius: 100%;
+    padding: 10px;
+    /* box-shadow: 0px 0px 17px 7px #edeced; */
+
+    z-index: 999999999;
+    animation: waveEffect 2.5s infinite ease-out;
+
+}
+
+.whatsApp_sideIcon svg {
+    color: #44b644;
+}
+
+@keyframes waveEffect {
+    0% {
+      box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.8);
+    }
+    50% {
+      box-shadow: 0 0 15px 10px rgba(37, 211, 102, 0.3);
+    }
+    100% {
+      box-shadow: 0 0 0 20px rgba(37, 211, 102, 0);
+    }
+  }
+
 @media (max-width: 1400px) {
     #service .service-boxes {
         height: 38rem;
@@ -1488,9 +1539,9 @@ textarea:focus {
     }
 
     .skills-images-boxes {
-        width: 8rem;
-        height: 8rem;
-        border: 8px solid rgb(213, 213, 213);
+        width: 7rem;
+        height: 7rem;
+        border: 5px solid rgb(213, 213, 213);
     }
 
     .more-web-relate-knowladge {
@@ -1499,7 +1550,7 @@ textarea:focus {
     }
 
     .all-slikls-boxes h1 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-weight: 700;
     }
 
@@ -1629,10 +1680,22 @@ textarea:focus {
     .about-description-wrapper p{
         text-align: center;
     }
- 
+    .upwork_image_wwrap img {
+        width: 100%;
+        display: flex;
+    }
 }
 
 @media (max-width: 576px) {
+    p,
+    a,
+    span,
+    strong,
+    ul,
+    li,
+    button{
+        font-size: 1.4rem;
+    }
     h1 {
         font-size: 2.5rem;
     }
@@ -1742,6 +1805,65 @@ textarea:focus {
         margin-top: 0rem;
     
     }
+    /* #header,
+    
+    #about,
+    #service,
+    #all-skills,
+    #portfolio,
+    #upwork_overview,
+    #client-review,
+    #invite,
+    #contact,
+    #footer{
+    } */
+
+    #service .service-boxes .icon-box {
+        width: 65px;
+        height: 65px;
+       
+        outline: rgba(221, 221, 221, 0.94) solid 5px;
+       
+    }
+
+    #service .service-boxes .icon-box img {
+        width: 40px;
+    }
+
+    #service .service-boxes .service-descp {
+        padding-top: 11rem;
+        text-align: start;
+        padding-left: 1.3rem;
+        padding-right: 1.3rem;
+    }
+    .serice-boxes-wrapper{
+        padding: 0 1rem;
+    }
+    .web_projects .image_portfolio .img_box {
+    height: 350px;
+    
+}
+.web_projects {
+    padding: 14px 4px;
+}
+
+#portfolio {
+    padding: 6rem 0px 6rem;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+section.our_projects {
+    padding-top: 3rem;
+   
+    margin-top: 0;
+
+}
+section#invite {
+    padding: 1rem;
+}
+
+
 }
 
 @media (max-width: 450px) {

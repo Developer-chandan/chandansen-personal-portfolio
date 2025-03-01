@@ -1422,6 +1422,7 @@ textarea:focus {
     .navbar-toggler-icon {
         font-size: 30px;
         font-weight: 500;
+        padding-top: 1rem;
     }
 
     .header-scrolled {

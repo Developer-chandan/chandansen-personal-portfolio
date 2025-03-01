@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"); * {
+/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"); */
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -23,19 +24,56 @@ html {
     --dark-purple: rgb(71 4 75);
 }
 
+@font-face {
+    font-family: poppinsLight;
+    src: url("../fonts/Poppins-Light.ttf");
+    font-weight: 200;
+}
+
+
+@font-face {
+    font-family: poppinsBold;
+    src: url("../fonts/Poppins-Bold.ttf");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: poppinsReg;
+    src: url("../fonts/Poppins-Regular.ttf");
+}
+@font-face {
+    font-family: poppinsMed;
+    src: url("../fonts/Poppins-Medium.ttf");
+}
+
+@font-face {
+    font-family: poppinsSemibold;
+    src: url("../fonts/Poppins-SemiBold.ttf");
+}
+
+
 body {
     font-size: 1.6rem;
-    font-family: Roboto, sans-serif;
+    font-family: poppinsLight;
+    /* font-family: Roboto, sans-serif; */
     box-sizing: border-box;
+}
+
+
+h1,
+h2,
+h3{
+    font-family: poppinsSemibold;
 }
 
 h1 {
     font-size: 5rem;
-    font-weight: 800;
 }
 
+
+
 ::-webkit-scrollbar {
-    width: 6px;
+    width: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -139,7 +177,7 @@ a {
     left: 0px;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.84), rgba(0, 0, 0, 0.88)), url("../img/team.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0.60)), url("../img/chandan\ sen\ bd.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -240,6 +278,7 @@ a {
     text-transform: capitalize;
     font-size: 5rem;
     margin-bottom: 2rem;
+    font-family: poppinsBold;
 }
 
 .header #showcase .showcase-title h1 strong {
@@ -629,12 +668,13 @@ section#client-review {
 }
 
 .section-title h1 {
-    float: left;
-    width: 100%;
+    /* float: left; */
+    max-width: 70%;
     text-align: center;
     color: var(--chandan-bg);
-    font-size: 34px;
+    font-size: 5rem;
     position: relative;
+    margin: 0 auto;
 }
 
 .swiper-container {
@@ -919,7 +959,7 @@ section#client-review {
 .title h1 {
     color: var(--chandan-bg);
     text-transform: capitalize;
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
 }
 
 #service .service-boxes .service-descp p {
@@ -1014,6 +1054,7 @@ h4.text-light.hello_caption {
     font-size: 2rem;
     letter-spacing: 1px;
     margin-bottom: 13px;
+    font-family: 'poppinsReg';
 }
 #achievement {
     background: linear-gradient(rgba(42, 41, 41, 0.97), rgba(11, 1, 1, 0.86), rgb(46, 18, 18), rgba(5, 14, 76, 0.85)) center center / cover no-repeat fixed, url("../img/achivement.jpg");

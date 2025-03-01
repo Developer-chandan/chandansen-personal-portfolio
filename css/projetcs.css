@@ -5,14 +5,14 @@
 }
 
 @font-face {
-    font-family: poppinsThin;
+    font-family: poppinsLight;
     src: url("../fonts/Poppins-Light.ttf");
     font-weight: 200;
 }
 
 @font-face {
-    font-family: poppinsExBold;
-    src: url("../fonts/Poppins-ExtraBold.ttf");
+    font-family: poppinsBold;
+    src: url("../fonts/Poppins-Bold.ttf");
     font-weight: 900;
 }
 
@@ -204,7 +204,7 @@ ul.web_technology li {
     overflow: hidden;
 } 
 .web_projects .image_portfolio .img_box.box_6 {
-    background: url("../img/Travel\ blog\ website.jpg") center top / cover;
+    background: url("../img/custom-front-end-website.jpg") center top / cover;
     overflow: hidden;
 } 
 .web_projects .image_portfolio .img_box.box_7 {
@@ -237,10 +237,13 @@ section.our_projects {
 }
 
 .portfolio_desctiption h2 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 500;
     text-transform: capitalize;
     color: rgb(33, 37, 41);
+    font-family: 'poppinsMed';
+    margin-bottom: 1.5rem;
+    line-height: 122%;
 }
 .all-skills-boxeswrapper h2 {
     text-transform: uppercase;

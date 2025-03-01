@@ -22,7 +22,7 @@
   <!-- custom css link  -->
   <link rel="stylesheet" href="css/style.css">
 
-  <title>Web developer chandan | Front end developer</title>
+  <title>Web Developer Chandan | WordPress & Shopify Expert</title>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-CVYH70DD4E"></script>
 <script>
@@ -165,9 +165,14 @@
             </div>
             <div class="about-description-wrapper" data-aos="fade">
               <h1>About Me</h1>
-              <p>It is my pleasure to introduce myself as Chandan Sen, a freelance Front-End Web Developer and WordPress expert. With over three years of professional experience, I have demonstrated my excellence on the Upwork marketplace, consistently achieving top-rated status and a 100% job success rate. </p>
+              
 
-              <p>As a web developer, I have had the privilege of collaborating with various teams and individual developers, honing my skills and expanding my expertise. I am passionate about coding and dedicated to solving problems efficiently by leveraging the latest technologies. I firmly believe in teamwork and a collaborative working approach, which has been instrumental in delivering high-quality web solutions.</p>
+
+              <p>I'm Chandan Sen, a passionate Front-End Web Developer, WordPress expert, and UX-focused Designer with over three years of experience in the industry. My expertise spans custom WordPress theme development, website optimization, and conversion-focused design—ensuring that every project I work on is both visually compelling and SEO-friendly. </p>
+
+              <p>I don't just build websites—I define goals, create wireframes in Figma, and design user-friendly experiences that drive results. My experience includes working with teams, agencies, and individual clients both locally and on Upwork, where I've maintained a top-rated profile with a 100% job success rate. Collaboration and adaptability are at the heart of my work, allowing me to stay ahead with the latest technologies and deliver top-tier web solutions.
+                <br>
+                Let's build something exceptional together!</p>
               <div class="download-resume mt-lg-5">
                 <a href="#all-skills" class="btn btn-primary">Area of Expertise</a>
                 <a target="_blank" href="https://calendly.com/chandansen/30min"
@@ -196,7 +201,7 @@
         <div class="col-12">
           <div class="title" data-aos="fade">
             <h1 class="s-title">what I'll do for you</h1>
-            <p class="subtitle">Using my expertise, I will help you increase your business profit. In addition to building websites, I am also passionate about front-end development, UI/UX design and improvement.
+            <p class="subtitle">I create visually stunning, high-converting websites that help businesses grow. Beyond just building websites, I focus on crafting seamless user experiences, enhancing UI/UX, and ensuring every site is optimized for success
             </p>
           </div>
         </div>
@@ -210,7 +215,7 @@
             </div>
             <div class="service-descp">
               <h1>Complete Website Development</h1>
-              <p>If you need hand-codeed, superfast and multi-functional website using MERN stack or PHP, I have some exciting organized plans for you. Feel free to ping me!.</p>
+              <p>I develop complete websites that align with your goals—fast, scalable, and built with custom solutions for a seamless user experience.</p>
             </div>
           </div>
         </div>
@@ -221,8 +226,8 @@
 
             </div>
             <div class="service-descp">
-              <h1>Landing Page design</h1>
-              <p>Building landing page is one of the best services I would like to offer you. It can be using pure HTML, CSS or React/Next.js whathever you want!</p>
+              <h1>Result Driven Landing Page</h1>
+              <p>I create high-converting landing pages tailored to your goals—built with HTML, CSS, or React/Next.js/ WordPress for maximum performance and impact.</p>
             </div>
           </div>
         </div>
@@ -1032,12 +1037,12 @@ Key features of the new website include event management, form submissions, and 
             </div>
             
           </div>
-          <div class="row web_projects box_1 flex-row-reverse">
+          <div class="row web_projects box_6 flex-row-reverse">
             <div class="col-lg-6">
               <div class="image_portfolio">
                 
                 <a  href="https://verge.app/" target="_blank">
-                  <div class="img_box box_1">
+                  <div class="img_box box_6">
                     <!-- <img src="img/custom-front-end-website.jpg" alt="startup website front end development"> -->
                   </div>
                 </a>
@@ -1255,7 +1260,10 @@ Key features of the new website include event management, form submissions, and 
             </div>
             
           </div>
-          
+          <div class="d-flex justify-content-center">
+            <button id="viewMoreProject" class="btn btn-primary">View More Projects</a>
+
+          </div>
         </div>
       </section>
 
@@ -1626,6 +1634,35 @@ Key features of the new website include event management, form submissions, and 
     AOS.init({
       duration: 1200
     });
+
+    document.addEventListener("DOMContentLoaded", function () {
+    const projects = document.querySelectorAll(".web_projects");
+    const seeMoreBtn = document.querySelector("#viewMoreProject");
+    const visibleCount = 3;
+    let expanded = false;
+
+    // Hide projects beyond the initial visible count
+    function showInitialProjects() {
+        projects.forEach((project, index) => {
+            project.style.display = index < visibleCount ? "flex" : "none";
+        });
+        seeMoreBtn.textContent = "See More Projects";
+    }
+
+    showInitialProjects();
+
+    // Handle button click to toggle between "See More" and "See Less"
+    seeMoreBtn.addEventListener("click", function () {
+        if (expanded) {
+            showInitialProjects();
+        } else {
+            projects.forEach(project => project.style.display = "flex");
+            seeMoreBtn.textContent = "See Less Projects";
+        }
+        expanded = !expanded;
+    });
+});
+
   </script>
   
 </body>

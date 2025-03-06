@@ -343,13 +343,14 @@ a {
 }
 
 .header #showcase .showcase-image img {
-    border: 4px solid var(--chandan-bg);
+    /* border: 4px solid var(--chandan-bg); */
     transform: scale(1);
     transition: all 0.3s ease-in-out 0s;
+    /* border-radius: 5px; */
 }
 
 .header #showcase .showcase-image img:hover {
-    transform: scale(1.08);
+    /* transform: scale(1.08); */
 }
 
 .header #showcase .showcase-btn {
@@ -1323,6 +1324,37 @@ textarea:focus {
 
 .whatsApp_sideIcon svg {
     color: #44b644;
+}
+#invite .invite-boxes .invite-descp a:hover,
+#invite .invite-boxes .invite-descp a:active{
+    color:var(--chandan-bg);
+}
+
+.animated-border{
+    position: relative;
+    border: 7px solid transparent;
+    display: block;
+    border-image: linear-gradient(0deg, rgb(200, 11, 11), rgb(3, 3, 65)) 1;
+    animation: borderMove 4s linear infinite;
+    border-radius: 5px;
+}
+
+@keyframes borderMove {
+    0% {
+        border-image-source: linear-gradient(0deg, red, rgb(11, 11, 156));
+    }
+    25% {
+        border-image-source: linear-gradient(90deg, red,  rgb(11, 11, 156));
+    }
+    50% {
+        border-image-source: linear-gradient(180deg, red, blue);
+    }
+    75% {
+        border-image-source: linear-gradient(270deg, red, blue);
+    }
+    100% {
+        border-image-source: linear-gradient(360deg, red,  rgb(11, 11, 156));
+    }
 }
 
 @keyframes waveEffect {

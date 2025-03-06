@@ -1147,7 +1147,9 @@ section#invite .title {
 
 #invite .invite-boxes .invite-descp a {
     color: var(--chandan-bg);
-    font-weight: 700;
+    /* font-weight: 700; */
+    color: var(--dark-gray);
+    text-transform: none;
 }
 
 #invite .emailbox .invite-descp p {
